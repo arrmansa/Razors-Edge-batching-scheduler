@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu126
+numpy
+numba
+scipy
+torch
+matplotlib
+jupyter
+transformers
+coverage

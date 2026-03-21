@@ -1,0 +1,6 @@
+/.conda
+/.vscode
+/models
+*.pyc
+*/__pycache__/*
+.coverage
