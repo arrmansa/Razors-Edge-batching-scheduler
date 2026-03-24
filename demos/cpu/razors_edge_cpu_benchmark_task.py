@@ -47,7 +47,8 @@ class RazorsEdgeCPUBenchmarkTask(RazorsEdgeComputeTask):
         # Using CPU tensors instead of CUDA
         return (), {
             "input_ids": self.torch.ones((batch_size, input_size), dtype=self.torch.long, device="cpu"),
-            "attention_mask": self.torch.ones((batch_size, input_size), dtype=self.torch.long, device="cpu")
+            "attention_mask": self.torch.ones((batch_size, input_size), dtype=self.torch.long, device="cpu"),
+            "token_type_ids": self.torch.ones((batch_size, input_size), dtype=self.torch.long, device="cpu"),
         }
 
     def load_model(self, model_pool: ThreadPoolExecutor) -> Any:
@@ -89,7 +90,10 @@ class RazorsEdgeCPUBenchmarkTask(RazorsEdgeComputeTask):
                 return model(**inputs)
         
         # Set optimal threads
-        torch.set_num_interop_threads(1)
+        try:
+            torch.set_num_interop_threads(1)
+        except Exception:
+            pass
         thread_benchmark_input = self.generate_test_input(4, 256)
         thread_timings: list[tuple[float, int]] = []
         with torch.inference_mode():
@@ -116,8 +120,9 @@ class RazorsEdgeCPUBenchmarkTask(RazorsEdgeComputeTask):
         batch_size = len(to_batch)
         
         buffer_copy = {k: v[:batch_size, :max_size] for k, v in token_buffer.items()}
-        buffer_copy["input_ids"].fill_(1)
+        buffer_copy["input_ids"].fill_(0)
         buffer_copy["attention_mask"].fill_(0)
+        buffer_copy["token_type_ids"].fill_(0)
         
         for row, payload in enumerate(to_batch):
             for key, value in payload.items():

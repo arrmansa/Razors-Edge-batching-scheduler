@@ -10,7 +10,7 @@
 ## Abstract
 Serving systems for embedding, LLM, and other matrix-multiplication-dominated inference workloads rely on batching for efficient hardware utilization. We observe that batching efficiency exhibits a sharp input-size-dependent structure driven by the transition between memory-bound and compute-bound regimes: small inputs can be batched flexibly across heterogeneous sizes, while large inputs require near-uniformity, leading to a rapid collapse in batching efficiency. This produces a characteristic blade-like ("razor's edge") shape in the batch performance landscape.
 
-We present the Razor's Edge batching scheduler, a practical framework that combines (i) dynamic-programming-based throughput optimization over sorted requests, (ii) multiple latency objectives for next-batch selection, and (iii) startup-time-efficient model benchmarking that builds batch timing estimators for real hardware. The approach is designed for real-time online serving with queueing. Our claims are scoped to the variable-size batched inference regimes evaluated in this paper, not to universal superiority across all serving stacks.
+We present the Razor's Edge batching scheduler, a practical framework that combines (i) dynamic-programming-based throughput optimization over sorted requests, (ii) multiple latency objectives for next-batch selection, and (iii) startup-time-efficient model benchmarking that builds batch timing estimators for real hardware. The approach is designed for real-time online serving with queueing. Our claims are scoped to the variable-size batched inference regimes evaluated in this paper, not to universal superiority across all serving stacks. We demonstrate the scheduler's efficacy through a 47% throughput increase on a CPU embedding workload (`jina-embeddings-v2-base-en`), a 26% throughput increase on a GPU embedding workload (`BAAI/bge-m3`), and the ability to tune latency charecteristics of an online system on these tasks.
 
 ## 1. Introduction
 Requests cannot be processed instantaneously at arrival in any real serving system. Under load, queueing is inevitable. A first-come, first-served single-request policy is simple, but it fails to exploit throughput gains available through batching. Simply batching the first `n` requests in a queue is common, but it is not throughput-optimal. Sorting requests by size and then batching can create high latency for large requests that may not be selected quickly under sustained load.
@@ -54,12 +54,12 @@ This makes Razor's Edge closer in spirit to objective-driven scheduling than to 
 ### 2.4 Scope of Novelty Claim
 The contribution of this work is not a new worst-case approximation ratio in scheduling theory. Instead, it is a systems-oriented synthesis with bounded claims:
 
-1. **Algorithmic synthesis claim (implementation-level):** for variable-size batched inference queues where Section 3 timing assumptions are a reasonable approximation, we provide a practical sorted-queue batching model with efficient DP partitioning plus an Latency-based ordering pass.
+1. **Algorithmic synthesis claim (implementation-level):** for variable-size batched inference queues where Section 3 timing assumptions are a reasonable approximation, we provide a practical sorted-queue batching model with efficient DP partitioning plus a latency-based ordering pass.
 2. **Engineering claim (deployment-level):** for deployments that can run startup calibration, we provide startup-efficient benchmarking/estimator construction and numerically safe scheduling implementation suitable for the tested runtime stack.
 3. **Empirical claim (evaluation-level):** on the specific synthetic and `BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en` workloads in Section 7 (with calibrated estimator tables and stated hardware/runtime), we observe throughput/latency improvements versus the baselines defined there.
 
 What is **not** claimed:
-- no proof of global optimality for the multi-group online or request ordering ordering pass.
+- no proof of global optimality for the multi-group online or request ordering pass.
 - no universal dominance over all dynamic batching policies, model families, or hardware environments.
 
 What is **validated in this paper**:
@@ -143,7 +143,7 @@ The RMS objective in this paper refers to minimizing \(\sum_i \ell_i^2\) for the
 Given a queue of requests, the scheduler runs four main steps:
 1. We first order the requests based on their size.
 2. We then partition them into batches to minimize total time using dynamic programming.
-3. We do a single ordering pass usinig a latency objective.
+3. We do a single ordering pass using a latency objective.
 4. We pick the first batch and update the expected start time of the next batch.
 
 ### 4.1 Batch creation by Dynamic Programming
@@ -533,39 +533,73 @@ Unless otherwise noted, each reported throughput statistic is based on 5 indepen
 For the synthetic task, Razor's Edge achieved a throughput of 13.3 RPS (17% higher than the baseline), with a maximum allowed batch size of 8.
 For the synthetic task, the baseline strategy achieved a peak throughput of 11.4 RPS, with best performance when the batch size was limited to 1. In this setting, simple batching did not improve throughput.
 
-**Figure 1:** Synthetic-load benchmark comparison.  
+
+**Figure 1:** Synthetic load benchmark comparison.  
+
 **Notebook source:** `demos/synthetic/dummy performance comparison basic.ipynb`.
 
 ![Synthetic Load Basic Benchmarks](images/Synthetic%20Load%20Basic%20Benchmarks.png)
 
-For the real model workload, Razor's Edge achieved a throughput of 35.3 RPS (25% higher than the baseline), with a maximum allowed batch size of 16.
+For the `BAAI/bge-m3` GPU workload, Razor's Edge achieved a throughput of 35.3 RPS (25% higher than the baseline), with a maximum allowed batch size of 16.
 For the real model workload, the baseline strategy achieved a throughput of 28.2 RPS, with best performance when the batch size was limited to 1. In this setting, simple batching did not improve throughput.
 
-**Figure 2:** Real-load benchmark comparison.  
+
+**Figure 2:** `BAAI/bge-m3` GPU workload benchmark comparison.  
+
 **Notebook source:** `demos/real/gpu benchmark performance comparison basic.ipynb`.
 
 ![Real Load Basic Benchmarks](images/Real%20Load%20Basic%20Benchmarks.png)
 
-For the real model workload with limited token input, Razor's Edge achieved a throughput of 84.6 RPS (26% higher than the baseline with batch size = 10), with a maximum allowed batch size of 16.
+For the `BAAI/bge-m3` GPU workload with limited token input, Razor's Edge achieved a throughput of 84.6 RPS (26% higher than the baseline with batch size = 10), with a maximum allowed batch size of 16.
 For this limited-token workload, the baseline strategy achieved a throughput of 67.4 RPS, with best performance at batch size = 10. Baseline batching improved throughput relative to the non-batched baseline of 41.4 RPS (39% lower than the baseline with batch size = 10).
 
-**Figure 3:** Real-load benchmark comparison with limited tokens.  
+
+**Figure 3:** `BAAI/bge-m3` GPU workload benchmark comparison with limited tokens.
+
 **Notebook source:** `demos/real/gpu benchmark performance comparison basic limited.ipynb`.
 
 ![Real Limited Load Basic Benchmarks](images/Real%20Limited%20Load%20Basic%20Benchmarks.png)
 
-**Figure 4:** Real-load benchmark comparison with limited tokens.  
+
+For the `jinaai/jina-embeddings-v2-base-en` CPU workload, Razor's Edge achieved a throughput of 16.2 RPS (47% higher than the baseline with batch 2 and no batch), with a maximum allowed batch size of 6.
+For this workload, the baseline strategy achieved a throughput of 11.0 RPS, with best performance at batch size 2. Baseline batching marginally improved throughput relative to the non-batched baseline of 10.5 RPS (5% lower than the baseline with batch size = 2).
 
 
-For the synthetic workload, we compare the three outlined strategies.
-**Notebook source:** `demos\synthetic\dummy latency comparison.ipynb`.
+**Figure 4:** Real `jinaai/jina-embeddings-v2-base-en` CPU benchmark comparison.
+
+**Notebook source:** `demos/cpu/razors_edge_cpu_benchmark_task.py`.
+
+![CPU Basic Performance Comparison](images/CPU%20Basic%20Performance%20Comparison.png)
+
+
+For the synthetic workload, we compare the three outlined latency objectives.
+
+**Figure 5:** Synthetic latency comparison.
+
+**Notebook source:** `demos/synthetic/dummy latency comparison.ipynb`.
 
 ![Synthetic Latency Comparison with Different Strategies](images/Synthetic%20Latency%20Comparison%20with%20Different%20Strategies.png)
 
 
-For the real workload with limited tokens, we compare the three outlined strategies.
-**Notebook source:** `demos\real\gpu benchmark limited latency comparison.ipynb`.
+For the `BAAI/bge-m3` GPU workload with limited tokens, we compare the three outlined latency objectives.
+
+
+**Figure 6:** Real `BAAI/bge-m3` GPU latency comparison.
+
+**Notebook source:** `demos/real/gpu benchmark limited latency comparison.ipynb`.
+
 ![Real Latency Comparison with Different Strategies](images/Real%20Latency%20Comparison%20with%20Different%20Strategies.png)
+
+
+For the `jinaai/jina-embeddings-v2-base-en` CPU workload, we compare the three outlined latency objectives.
+
+**Figure 7:** Real `jinaai/jina-embeddings-v2-base-en` CPU latency comparison.
+
+**Notebook source:** `demos/cpu/cpu benchmark latency comparison.ipynb`.
+
+![CPU Benchmark Latency Comparison with Different Strategies](images/CPU%20Benchmark%20Latency%20Comparison%20with%20Different%20Strategies.png)
+
+
 
 ### 7.1 Baseline Policy Definition
 
@@ -602,7 +636,7 @@ With no batching:
 
 [11.4, 11.3, 11.4, 11.4, 11.4], 11.4 +- 0.04
 
-#### Real load Basic 
+#### BAAI/bge-m3 GPU workload 
 
 from `demos/real/gpu benchmark performance comparison.ipynb`
 
@@ -614,7 +648,7 @@ With no batching:
 
 [27.9, 28.1, 27.6, 29.0, 28.4], 28.2 +- 0.48
 
-#### Real load limited tokens
+#### BAAI/bge-m3 GPU workload with limited tokens
 
 from `demos/real/gpu benchmark performance comparison basic limited.ipynb`
 
@@ -630,9 +664,26 @@ With no batching:
 
 [42.0, 37.9, 45.5, 41.1, 40.6], 41.4 +- 2.46
 
+#### jinaai/jina-embeddings-v2-base-en CPU workload
+
+from `demos/cpu/cpu performance comparison basic.ipynb`
+
+With Razor's Edge (RMS):
+
+[16.3, 16.1, 16.4, 16.2, 16.2], 16.2 +- 0.1
+
+With baseline batching (batch size = 2; best among batch sizes 1, 2, 3, 4):
+
+[11.0, 10.9, 11.0, 11.0, 10.9], 11.0 +- 0.05
+
+With no batching:
+
+[10.5, 10.8, 10.5, 10.2, 10.7], 10.5 +- 0.21
+
+
 #### Synthetic Latency Comparison with Different Strategies
 
-`demos\synthetic\dummy latency comparison.ipynb`
+From `demos/synthetic/dummy latency comparison.ipynb`
 
 RMS Latency pass shows lower rms, mean and p95 latency as expected.
 
@@ -646,13 +697,13 @@ MINMAX shows the worst latencies in avg, rms and mean. MINMAX has almost equal p
 | FIFO | 13.435045 | 8.555332 | 7.346844 | 14.084836 | 14.884194 | 14.890185 |
 | MINMAX | 13.199825 | 11.006600 | 10.000695 | 15.145113 | 15.158157 | 15.158657 |
 
-#### Real Latency Comparison with Different Strategies, limited token input
+#### BAAI/bge-m3 GPU workload Latency Comparison with Different Strategies, limited token input
 
-`demos\synthetic\dummy latency comparison.ipynb`
+From `demos/real/gpu benchmark limited latency comparison.ipynb`
 
 Not many trends can be seen due to noise.
 
-For rms and mean latency the increasing order of latency is - rms > fifo > minmax (same as synthetic).
+For RMS and mean latency, the increasing order of latency is RMS < FIFO < MINMAX (same as synthetic).
 
 | Strategy | RPS | RMS Latency | Mean Latency | P95 Latency | P99 Latency | Max Latency |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -660,11 +711,26 @@ For rms and mean latency the increasing order of latency is - rms > fifo > minma
 | FIFO | 95.962956 | 1.240765 | 1.091206 | 1.983491 | 2.080144 | 2.080418 |
 | MINMAX | 95.411471 | 1.419826 | 1.284810 | 2.061702 | 2.096055 | 2.099771 |
 
+#### jinaai/jina-embeddings-v2-base-en CPU workload Latency Comparison with Different Strategies
+
+FIFO Wins every category. 
+
+RMS has slightly lower throughput than MINMAX. RMS has slightly lower RMS, Mean and p95 latency
+
+MINMAX has almost equal p95, p99 and max latency.  MINMAX is slightly better than RMS at p99 and max latency.
+
+
+| Strategy | RPS | RMS Latency | Mean Latency | P95 Latency | P99 Latency | Max Latency |
+| --- | --- | --- | --- | --- | --- | --- |
+| FIFO | 33.254540 | 3.487137 | 3.017066 | 5.774928 | 5.987262 | 6.015363 |
+| RMS | 29.804531 | 3.585430 | 3.023337 | 6.141113 | 6.697880 | 6.713867 |
+| MINMAX | 30.204392 | 3.976987 | 3.470474 | 6.503314 | 6.623513 | 6.623803 |
+
 ### 7.2.1 Practical Strategy-Selection Rule (Deployment Guidance)
 
 Until per-strategy latency tables are complete for a target deployment, use the following operational policy:
 - **RMS** as default for balanced throughput + average latency behavior.
-- **FIFO** when fairness/oldest-first service is a requirement and throughtput is more important.
+- **FIFO** when fairness/oldest-first service is a requirement and throughput is more important.
 - **MINMAX** when controlling worst-case latency is the top priority, with acceptance of potentially higher average latency and even worse throughput.
 
 Once Section 7.2 per-strategy numbers are filled in, this rule should be validated or adjusted for each production workload and SLO profile.
@@ -713,6 +779,7 @@ Requests were created using uniform-random characters with varying lengths:
 - 1 to 1000 characters for the synthetic task
 - 1 to 1300 chars (corresponding to 1 to 1000 tokens) for the real task `BAAI/bge-m3`
 - 1 to 500 chars (corresponding to 1 to 400 tokens) for the limited real task `BAAI/bge-m3`
+- 1 to 200 chars for the cpu task `jinaai/jina-embeddings-v2-base-en`
 
 ### 7.5 Throughput under Increasing Load
 
@@ -720,36 +787,78 @@ We next evaluate system throughput as a function of load by varying the number o
 
 The comparison figures in this section show Razor's Edge against the baseline dynamic batching strategy. The baseline exhibits approximately constant throughput as load increases, reflecting its reliance on fixed-size aggregation without improved batching quality. In contrast, Razor's Edge shows increasing throughput with load up to saturation.
 
+#### Graphs
 
-**Figure 5:** Baseline scheduler throughput vs. parallelism (synthetic workload).  
+##### Synthetic
+
+**Figure 8:** Baseline scheduler throughput vs. parallelism (synthetic workload).
+
 **Notebook source:** `demos/synthetic/dummy performance comparison.ipynb`.
 
 ![BaseBatchedDummyTask Throughput vs Parallelism](images/BaseBatchedDummyTask%20Throughput%20vs%20Parallelism.png)
 
-**Figure 6:** Razor's Edge scheduler throughput vs. parallelism (synthetic workload).  
+
+**Figure 9:** Razor's Edge scheduler throughput vs. parallelism (synthetic workload).
+
 **Notebook source:** `demos/synthetic/dummy performance comparison.ipynb`.
 
 ![RazorsEdgeDummyTask Throughput vs Parallelism](images/RazorsEdgeDummyTask%20Throughput%20vs%20Parallelism.png)
 
-**Figure 7:** Direct throughput comparison of baseline and Razor's Edge (synthetic workload).  
+
+**Figure 10:** Direct throughput comparison of baseline and Razor's Edge (synthetic workload).
+
 **Notebook source:** `demos/synthetic/dummy performance comparison.ipynb`.
 
 ![BaseBatchedDummyTask and RazorsEdgeDummyTask Throughput vs Parallelism](images/BaseBatchedDummyTask%20and%20RazorsEdgeDummyTask%20Throughput%20vs%20Parallelism.png)
 
-**Figure 8:** Baseline scheduler throughput vs. parallelism (real workload).  
+
+##### BAAI/bge-m3 GPU workload
+
+**Figure 11:** Baseline scheduler throughput vs. parallelism (`BAAI/bge-m3` GPU workload).
+
 **Notebook source:** `demos/real/gpu benchmark performance comparison.ipynb`.
 
 ![BaseBatchedGPUBenchmarkTask Throughput vs Parallelism](images/BaseBatchedGPUBenchmarkTask%20Throughput%20vs%20Parallelism.png)
 
-**Figure 9:** Razor's Edge scheduler throughput vs. parallelism (real workload).  
+
+**Figure 12:** Razor's Edge scheduler throughput vs. parallelism (`BAAI/bge-m3` GPU workload).
+
 **Notebook source:** `demos/real/gpu benchmark performance comparison.ipynb`.
 
 ![RazorsEdgeGPUBenchmarkTask Throughput vs Parallelism](images/RazorsEdgeGPUBenchmarkTask%20Throughput%20vs%20Parallelism.png)
 
-**Figure 10:** Direct throughput comparison of baseline and Razor's Edge (real workload).  
+
+**Figure 13:** Direct throughput comparison of baseline and Razor's Edge (`BAAI/bge-m3` GPU workload).
+
 **Notebook source:** `demos/real/gpu benchmark performance comparison.ipynb`.
 
 ![BaseBatchedGPUBenchmarkTask and RazorsEdgeGPUBenchmarkTask Throughput vs Parallelism](images/BaseBatchedGPUBenchmarkTask%20and%20RazorsEdgeGPUBenchmarkTask%20Throughput%20vs%20Parallelism.png)
+
+
+##### jinaai/jina-embeddings-v2-base-en CPU workload
+
+**Figure 14:** Baseline scheduler throughput vs. parallelism (`jinaai/jina-embeddings-v2-base-en` CPU workload).
+
+**Notebook source:** `demos/cpu/cpu performance comparison.ipynb`.
+
+![BaseBatchedCPUBenchmarkTaskB2 Throughput vs Parallelism](images/BaseBatchedCPUBenchmarkTaskB2%20Throughput%20vs%20Parallelism.png)
+
+
+**Figure 15:** Razor's Edge scheduler throughput vs. parallelism (`jinaai/jina-embeddings-v2-base-en` CPU workload).
+
+**Notebook source:** `demos/cpu/cpu performance comparison.ipynb`.
+
+![RazorsEdgeCPUBenchmarkTask Throughput vs Parallelism](images/RazorsEdgeCPUBenchmarkTask%20Throughput%20vs%20Parallelism.png)
+
+
+**Figure 16:** Direct throughput comparison of baseline and Razor's Edge (`jinaai/jina-embeddings-v2-base-en` CPU workload).
+
+**Notebook source:** `demos/cpu/cpu performance comparison.ipynb`.
+
+![Razor's Edge vs Batch-2 Throughput vs Parallelism](images/Razor's%20Edge%20vs%20Batch-2%20Throughput%20vs%20Parallelism.png)
+
+
+#### Reasoning
 
 This effect arises because larger queue sizes enable better sorting of input sizes, allowing the scheduler to construct more efficient batches. As concurrency increases, the dynamic program has greater flexibility to select near-optimal partitions, improving overall hardware utilization.
 
@@ -763,27 +872,32 @@ On the synthetic workload, we plot throughput as a function of minimum and maxim
 
 For these experiments, this pattern is consistent with a transition between memory-dominated to compute-dominated behavior.
 
-In the real `BAAI/bge-m3` workload on gpu, we observe a qualitatively similar contour trend with higher measurement noise. Note the narrower shape on the gpu performance contours, indicating that batching generally works and improved performance especially on low sized inputs.
+In the real `BAAI/bge-m3` GPU workload, we observe a qualitatively similar contour trend with higher measurement noise. Note the narrower shape on the gpu performance contours, indicating that batching generally works and improved performance especially on low sized inputs.
 
-In the real `jinaai/jina-embeddings-v2-base-en` workload on cpu we observe a qualitatively similar contour shapes. Note the narrower shape on the cpu performance contours. This is explained by matrix multiplication being mostly compute bound on cpu, and wasted compute being heaviliy penalized.
+In the real `jinaai/jina-embeddings-v2-base-en` CPU workload we observe a qualitatively similar contour shapes. Note the narrower shape on the cpu performance contours. This is explained by matrix multiplication being mostly compute bound on cpu, and wasted compute being heaviliy penalized.
 
 This supports applicability to the evaluated workload class (variable-size batched inference with calibrated estimators).
 
 We do not guarantee the same structure on untested models and hardware. 
 
-**Figure 11:** Improvement from allowing variable batch sizes (synthetic task performance contours).  
+**Figure 17:** Improvement from allowing variable batch sizes (synthetic task performance contours).
+
 **Notebook source:** `demos/synthetic/razors edge dummy graphs.ipynb`.
 
 ![Improvement by Allowing Different Batch Sizes for RazorsEdgeDummyTask](images/Improvement%20by%20Allowing%20Different%20Batch%20Sizes%20for%20RazorsEdgeDummyTask.png)
 
-**Figure 12:** Improvement from allowing variable batch sizes (real-model gpu performance contours).  
+
+**Figure 18:** Improvement from allowing variable batch sizes (real-model gpu performance contours).
+
 **Notebook source:** `demos/real/razors edge gpu benchmark graphs.ipynb`.
 
 ![Improvement by Allowing Different Batch Sizes for RazorsEdgeGPUBenchmarkTask](images/Improvement%20by%20Allowing%20Different%20Batch%20Sizes%20for%20RazorsEdgeGPUBenchmarkTask.png)
 
 
-**Figure 12:** Improvement from allowing variable batch sizes (real-model cpu performance contours).  
-**Notebook source:** `demos/cpu/azors edge cpu benchmark graphs.ipynb`.
+**Figure 19:** Improvement from allowing variable batch sizes (real-model cpu performance contours).
+
+**Notebook source:** `demos/cpu/razors edge cpu benchmark graphs.ipynb`.
+
 ![Improvement by Allowing Different Batch Sizes for RazorsEdgeCPUBenchmarkTask](images/Improvement%20by%20Allowing%20Different%20Batch%20Sizes%20for%20RazorsEdgeCPUBenchmarkTask.png)
 
 ### 7.7 Summary of Findings
@@ -800,7 +914,7 @@ Together, these results demonstrate that, on the evaluated workloads and setup, 
 ## 8. Limitations and Future Work
 - Partitioning and RMS calculations are expensive and cause CPU overhead. This may cause slowdowns in the case of small models, low-CPU environments, or large batch sizes.
 - Timing estimators could be created directly from model architecture and benchmarking basic operations.
-- It is unknown why FIFO seems to consistently have slightly higher throughput. This is theorized to be because FIFO ends up choosing more "efficient" small, fast batches at random while RMS and MINMAX actively discriminiate against "efficient" small, fast batches.
+- It is unknown why FIFO seems to consistently have slightly higher throughput. This is theorized to be because FIFO ends up choosing more "efficient" small, fast batches at random while RMS and MINMAX actively discriminate against "efficient" small, fast batches.
 
 Future work includes:
 1. Better estimators by analysis of model components
@@ -838,19 +952,7 @@ We keep benchmark-critical dependencies in `requirements.txt`; non-benchmark pac
 
 Absolute throughput values can vary across hardware and runtime conditions, but the contour-shape phenomenon ("razor's edge" transition between efficient and inefficient batching regions) is expected to be present on most modern hardware and models.
 
-Notebook-to-figure mapping for paper images:
-- Figure 1 (`images/Synthetic Load Basic Benchmarks.png`) <- `demos/synthetic/dummy performance comparison basic.ipynb`
-- Figure 2 (`images/Real Load Basic Benchmarks.png`) <- `demos/real/gpu benchmark performance comparison basic.ipynb`
-- Figure 3 (`images/Real Limited Load Basic Benchmarks.png`) <- `demos/real/gpu benchmark performance comparison basic limited.ipynb`
-- Figure 4 (`images/Synthetic Load OldestPicker RMS Benchmarks.png`) <- `demos/synthetic/dummy performance comparison rms.ipynb`
-- Figure 5 (`images/BaseBatchedDummyTask Throughput vs Parallelism.png`) <- `demos/synthetic/dummy performance comparison.ipynb`
-- Figure 6 (`images/RazorsEdgeDummyTask Throughput vs Parallelism.png`) <- `demos/synthetic/dummy performance comparison.ipynb`
-- Figure 7 (`images/BaseBatchedDummyTask and RazorsEdgeDummyTask Throughput vs Parallelism.png`) <- `demos/synthetic/dummy performance comparison.ipynb`
-- Figure 8 (`images/BaseBatchedGPUBenchmarkTask Throughput vs Parallelism.png`) <- `demos/real/gpu benchmark performance comparison.ipynb`
-- Figure 9 (`images/RazorsEdgeGPUBenchmarkTask Throughput vs Parallelism.png`) <- `demos/real/gpu benchmark performance comparison.ipynb`
-- Figure 10 (`images/BaseBatchedGPUBenchmarkTask and RazorsEdgeGPUBenchmarkTask Throughput vs Parallelism.png`) <- `demos/real/gpu benchmark performance comparison.ipynb`
-- Figure 11 (`images/Improvement by Allowing Different Batch Sizes for RazorsEdgeDummyTask.png`) <- `demos/synthetic/razors edge dummy graphs.ipynb`
-- Figure 12 (`images/Improvement by Allowing Different Batch Sizes for RazorsEdgeGPUBenchmarkTask.png`) <- `demos/real/razors edge gpu benchmark graphs.ipynb`
+All figures have source notebooks provided.
 
 The paper text describes implemented behavior and references concrete function names in:
 - `src/razors_edge/optimal_batching.py`
