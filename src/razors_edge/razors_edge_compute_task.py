@@ -4,7 +4,7 @@ import logging
 import time
 from collections.abc import Iterable, Sequence
 from concurrent.futures import ThreadPoolExecutor
-from typing import Any, override
+from typing import Any, override, Literal
 from functools import partial
 from src.executor.base_batched_compute_task import BaseBatchedComputeTask
 
@@ -50,6 +50,10 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
     @override
     def is_gpu() -> bool:
         """Return whether this task runs GPU inference."""
+
+    @property
+    def latency_strategy() -> Literal['RMS', 'FIFO', 'MINMAX']:
+        return 'RMS'
 
     @classmethod
     @override
@@ -157,7 +161,7 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
         # If the expected schedule time is in the past, set it to the current time. Setting it to current time is slightly inaccurate as this function will take time to execute.
         # At full load, the expected schedule time will be in the future, so this is not a problem.
         self.expected_schedule_time = max(self.expected_schedule_time, time.perf_counter_ns())
-        batch_start_idx, batch_end_idx, batch_process_duration = self.get_batch_start_end_idx_and_duration(model_input_sizes, self.batch_timing_estimators, queuing_times, self.expected_schedule_time)
+        batch_start_idx, batch_end_idx, batch_process_duration = self.get_batch_start_end_idx_and_duration(model_input_sizes, self.batch_timing_estimators, queuing_times, self.expected_schedule_time, self.latency_strategy)
         self.expected_schedule_time += batch_process_duration  # This will be used for the next batch
         # Reconstruct the keys of the queue dictionary for the current batch
         queue_dict_keys: tuple[tuple[int, int], ...] = tuple(zip(operation_ids[batch_start_idx:batch_end_idx], queuing_times[batch_start_idx:batch_end_idx], strict=True))

@@ -1,5 +1,7 @@
 """Optimal batching algorithms for efficient model inference with dynamic programming and RMS latency optimization."""
 
+from typing import Literal
+
 import numpy as np
 from numba import njit
 
@@ -114,7 +116,7 @@ def _prospective_rms_latency_improvement(
 
 
 @njit(fastmath=True, nogil=True, boundscheck=False)
-def _get_slice_indexes_and_duration(prev_sizes_array: np.ndarray, batch_start_times: np.ndarray, queueing_times_array: np.ndarray) -> tuple[int, int, int]:
+def _get_slice_indexes_and_duration_rms(prev_sizes_array: np.ndarray, batch_start_times: np.ndarray, queueing_times_array: np.ndarray) -> tuple[int, int, int]:
     """Get optimal batch slice indexes and duration using RMS latency comparison."""
     chosen_end_idx: int = len(prev_sizes_array) - 1  # Sane defaults
     chosen_start_idx: int = chosen_end_idx - prev_sizes_array[chosen_end_idx]
@@ -149,16 +151,75 @@ def _get_slice_indexes_and_duration(prev_sizes_array: np.ndarray, batch_start_ti
     return chosen_start_idx, chosen_end_idx, chosen_process_duration
 
 
+@njit(fastmath=True, nogil=True, boundscheck=False)
+def _get_slice_indexes_and_duration_fifo(prev_sizes_array: np.ndarray, batch_start_times: np.ndarray, queueing_times_array: np.ndarray) -> tuple[int, int, int]:
+    """Get optimal batch slice indexes and duration using fifo."""
+    chosen_end_idx: int = len(prev_sizes_array) - 1  # Sane defaults
+    chosen_start_idx: int = chosen_end_idx - prev_sizes_array[chosen_end_idx]
+    chosen_process_duration: int = batch_start_times[chosen_end_idx] - batch_start_times[chosen_start_idx]
+    chosen_max_queueing_time: int = queueing_times_array[chosen_start_idx:chosen_end_idx].max()
+    end_idx: int = chosen_start_idx
+    while end_idx > 0:
+        start_idx = end_idx - prev_sizes_array[end_idx]
+        prospective_process_duration: int = batch_start_times[end_idx] - batch_start_times[start_idx]
+        prospective_max_queueing_time: int = queueing_times_array[start_idx:end_idx].max()
+
+        # Batch with element that came first is chosen
+        if prospective_max_queueing_time > chosen_max_queueing_time:
+            chosen_start_idx = start_idx
+            chosen_end_idx = end_idx
+            chosen_process_duration = prospective_process_duration
+            chosen_max_queueing_time = prospective_max_queueing_time
+
+        end_idx = start_idx
+
+    return chosen_start_idx, chosen_end_idx, chosen_process_duration
+
+
+@njit(fastmath=True, nogil=True, boundscheck=False)
+def _get_slice_indexes_and_duration_minmax(prev_sizes_array: np.ndarray, batch_start_times: np.ndarray, queueing_times_array: np.ndarray) -> tuple[int, int, int]:
+    """Get optimal batch slice indexes and duration by minimizing max latency."""
+    chosen_end_idx: int = len(prev_sizes_array) - 1  # Sane defaults
+    chosen_start_idx: int = chosen_end_idx - prev_sizes_array[chosen_end_idx]
+    chosen_process_duration: int = batch_start_times[chosen_end_idx] - batch_start_times[chosen_start_idx]
+    chosen_max_queueing_time: int = queueing_times_array[chosen_start_idx:chosen_end_idx].max()
+    end_idx: int = chosen_start_idx
+    while end_idx > 0:
+        start_idx = end_idx - prev_sizes_array[end_idx]
+        prospective_process_duration: int = batch_start_times[end_idx] - batch_start_times[start_idx]
+        prospective_max_queueing_time: int = queueing_times_array[start_idx:end_idx].max()
+
+        # Batch with element that will have the largest latency is chosen
+        if ((prospective_max_queueing_time>>1) + (prospective_process_duration>>1)) > ((chosen_max_queueing_time>>1) + (chosen_process_duration>>1)):
+            chosen_start_idx = start_idx
+            chosen_end_idx = end_idx
+            chosen_process_duration = prospective_process_duration
+            chosen_max_queueing_time = prospective_max_queueing_time
+
+        end_idx = start_idx
+
+    return chosen_start_idx, chosen_end_idx, chosen_process_duration
+
+
+
 def get_batch_start_end_idx_and_duration(
-    sorted_model_input_sizes: tuple[int] | np.ndarray,
+    sorted_model_input_sizes: tuple[int, ...] | np.ndarray,
     batch_timing_estimators: np.ndarray,
-    queuing_times: tuple[int] | np.ndarray,
+    queuing_times: tuple[int, ...] | np.ndarray,
     expected_schedule_time: int,
+    strategy: Literal['RMS', 'FIFO', 'MINMAX'],
 ) -> tuple[int, int, int]:
     """Get optimal batch start and end indexes with duration using dynamic programming and RMS latency optimization."""
     batch_start_times, prev_batch_size = _compiled_dynamic_batcher(np.asarray(sorted_model_input_sizes, dtype=np.uint32), batch_timing_estimators)
     queueing_times_array = np.clip(expected_schedule_time - np.asarray(queuing_times, dtype=np.int64), 0, None)
-    return _get_slice_indexes_and_duration(prev_batch_size, batch_start_times, queueing_times_array)
+    if strategy == 'RMS':
+        return _get_slice_indexes_and_duration_rms(prev_batch_size, batch_start_times, queueing_times_array)
+    elif strategy == 'FIFO':
+        return _get_slice_indexes_and_duration_fifo(prev_batch_size, batch_start_times, queueing_times_array)
+    elif strategy == 'MINMAX':
+        return _get_slice_indexes_and_duration_minmax(prev_batch_size, batch_start_times, queueing_times_array)
+    else:
+        raise RuntimeError("Invalid Strategy")
 
 
 # To trigger the JIT compilation, with realistic parameters

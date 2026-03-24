@@ -1,5 +1,5 @@
 # Razors-Edge-batching-scheduler
-A scheduler to maximize throughput and minimize RMSE latency for ML requests.
+A scheduler to maximize throughput and fulfil latency objectives for ML requests.
 
 ## What this is
 This project experiments with a smarter way to group requests into batches so you can:
@@ -13,6 +13,9 @@ It focuses on workloads like embeddings / classification where batched compute i
 ## How it works
 
 When batching inputs for AI, there is usually padding. This padding creates inefficiency. Therefore to maximize throughput, inputs with very different sizes should not be batched.
+
+In addition the best batch to pick once you have all the batches could be done using RMS, FIFO or MINMAX strategies
+
 This repo describes a scheduler which takes this detail into account.
 
 ## Quick start
