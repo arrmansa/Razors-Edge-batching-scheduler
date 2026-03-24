@@ -803,15 +803,6 @@ Future work includes:
 2. Estimator uncertainty modeling and online recalibration.
 3. Throughput may be further improved by selecting batches that are most "efficient".
 
-### 8.1 Threats to Validity
-
-To clarify interpretation boundaries, we separate validity risks into three categories:
-
-- **Internal validity (measurement and implementation effects):** timing on commodity systems is sensitive to transient scheduler state, thermal effects, and runtime noise. We mitigate this by repeated runs and reported variation, but residual noise remains.
-- **Construct validity (objective-to-quality mapping):** we optimize throughput and \(\sum_i \ell_i^2\) (RMS-related squared latency objective). These are useful operational proxies, but production SLOs may weight p95/p99 latency, fairness, or tenant isolation differently.
-- **External validity (generalization):** experiments in this manuscript focus on synthetic workloads and `BAAI/bge-m3` under the reported setup. Gains may differ for other model architectures, kernels, serving stacks, accelerator classes, and request-size distributions.
-
-
 ## 9. Conclusion
 Razor's Edge provides a practical batching framework that unifies throughput optimization and latency objectives for variable-size inference workloads.
 Our core contribution is a systems synthesis: DP-based contiguous partitioning on sorted requests, an RMS-guided online ordering pass, and practical estimator construction for deployment. In the evaluated synthetic and real (`BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en`) settings with calibrated timing estimators, this combination improves throughput and maintains favorable latency behavior relative to the tested FIFO/fixed-cap baselines.
