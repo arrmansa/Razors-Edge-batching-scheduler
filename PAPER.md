@@ -510,7 +510,7 @@ Base class: `RazorsEdgeComputeTask` in `src/razors_edge/razors_edge_compute_task
 At runtime, batch selection is a composition:
 ```math
 \text{inputs} \xrightarrow{\text{preprocess}} (u_i,s_i)
-\xrightarrow{\text{sort by }s_i} \xrightarrow{\text{DP+RMS}} [i:j)
+\xrightarrow{\text{sort by }s_i} \xrightarrow{\text{DP+Latency}} [i:j)
 \xrightarrow{\text{create\_batch}} B
 \xrightarrow{\text{model}} \hat{y}
 \xrightarrow{\text{postprocess}} y
