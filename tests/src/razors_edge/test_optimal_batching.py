@@ -27,6 +27,7 @@ class TestOptimalBatching(unittest.TestCase):
             batch_timing_estimators=batch_timing_estimators,
             queuing_times=queuing_times,
             expected_schedule_time=0,
+            strategy="RMS",
         )
 
         self.assertGreaterEqual(start_idx, 0)

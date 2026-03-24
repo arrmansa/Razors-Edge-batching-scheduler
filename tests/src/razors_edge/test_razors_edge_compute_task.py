@@ -52,7 +52,7 @@ class TestRazorsEdgeComputeTaskMethods(unittest.TestCase):
         task = DummyRazorsEdgeTask.__new__(DummyRazorsEdgeTask)
         task.batch_timing_estimators = None
         task.expected_schedule_time = time.perf_counter_ns()
-        task.get_batch_start_end_idx_and_duration = lambda sizes, estimators, queueing, expected: (1, 3, 123)
+        task.get_batch_start_end_idx_and_duration = lambda sizes, estimators, queueing, expected, strategy: (1, 3, 123)
         task.create_batch = lambda items: (tuple(items), {"count": len(items)})
 
         queue = {

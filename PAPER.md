@@ -56,7 +56,7 @@ The contribution of this work is not a new worst-case approximation ratio in sch
 
 1. **Algorithmic synthesis claim (implementation-level):** for variable-size batched inference queues where Section 3.2 timing assumptions are a reasonable approximation, we provide a practical sorted-queue batching model with efficient DP partitioning plus an RMS-based first-batch ordering pass.
 2. **Engineering claim (deployment-level):** for deployments that can run startup calibration, we provide startup-efficient benchmarking/estimator construction and numerically safe scheduling implementation suitable for the tested runtime stack.
-3. **Empirical claim (evaluation-level):** on the specific synthetic and `BAAI/bge-m3` workloads in Section 7 (with calibrated estimator tables and stated hardware/runtime), we observe throughput/latency improvements versus the baselines defined there.
+3. **Empirical claim (evaluation-level):** on the specific synthetic and `BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en` workloads in Section 7 (with calibrated estimator tables and stated hardware/runtime), we observe throughput/latency improvements versus the baselines defined there.
 
 What is **not** claimed:
 - no proof of global optimality for the multi-group online or request ordering ordering pass;
@@ -125,7 +125,7 @@ Then `time(B2") < time(B2)` while `time(B1") = time(B1)`. Repeating this exchang
 
 ### 3.3 Applicability
 
-The method is intended for **variable-size batched inference** workloads where a calibration phase can build a timing estimator over `(batch_size, max_input_size)` and where measured batch durations are stable enough for Section 3.2 assumptions to be useful. In this paper, that condition is tested on (i) a synthetic controlled workload and (ii) a `BAAI/bge-m3` inference pipeline under the reported hardware/runtime setup. Applicability to other PyTorch/TensorFlow/ONNX/OpenVINO deployments depends on whether their measured timing surfaces exhibit similar stability after calibration.
+The method is intended for **variable-size batched inference** workloads where a calibration phase can build a timing estimator over `(batch_size, max_input_size)` and where measured batch durations are stable enough for Section 3.2 assumptions to be useful. In this paper, that condition is tested on (i) a synthetic controlled workload and (ii) a `BAAI/bge-m3` GPU inference pipeline (iii) `jinaai/jina-embeddings-v2-base-en` CPU inference pipeline under the reported hardware/runtime setup. Applicability to other PyTorch/TensorFlow/ONNX/OpenVINO deployments depends on whether their measured timing surfaces exhibit similar stability after calibration.
 
 ### 3.4 Notation and Timing Terms (used consistently below)
 
@@ -813,17 +813,16 @@ To clarify interpretation boundaries, we separate validity risks into three cate
 
 
 ## 9. Conclusion
-Razor's Edge provides a practical batching framework that unifies throughput optimization and RMS latency for variable-size inference workloads.
-
-Our core contribution is a systems synthesis: DP-based contiguous partitioning on sorted requests, an RMS-guided online ordering pass, and practical estimator construction for deployment. In the evaluated synthetic and real (`BAAI/bge-m3`) settings with calibrated timing estimators, this combination improves throughput and maintains favorable latency behavior relative to the tested FIFO/fixed-cap baselines.
+Razor's Edge provides a practical batching framework that unifies throughput optimization and latency objectives for variable-size inference workloads.
+Our core contribution is a systems synthesis: DP-based contiguous partitioning on sorted requests, an RMS-guided online ordering pass, and practical estimator construction for deployment. In the evaluated synthetic and real (`BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en`) settings with calibrated timing estimators, this combination improves throughput and maintains favorable latency behavior relative to the tested FIFO/fixed-cap baselines.
 
 Validated in this paper:
 - On the reported experiments, the proposed scheduler outperforms the defined baselines on throughput for the tested variable-size batched inference tasks.
-- The observed contour structure and load-scaling behavior are reproducible within the tested synthetic and `BAAI/bge-m3` setups.
+- The observed contour structure and load-scaling behavior are reproducible within the tested synthetic and `BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en` setups.
 
 Not claimed:
 - A universal guarantee across all serving stacks, models, and hardware.
-- Global optimality of the multi-group online RMS ordering pass.
+- Global optimality of the multi-group online Latency ordering pass.
 
 Accordingly, the method should be interpreted as an objective-driven, empirically supported scheduler design for the evaluated workload class, rather than a general theorem about all inference systems.
 
@@ -832,7 +831,7 @@ Accordingly, the method should be interpreted as an objective-driven, empiricall
 - **Conflict of interest:** The author declares no competing financial or non-financial interests related to this work.
 
 ## 11. Ethical Considerations / Potential Misuse
-This work improves serving efficiency and resource allocation for batched inference systems. In deployment, operators should monitor service stability if these mechanisms are integrated. Efficiency gains can also vary based on random variance at startup or request size distribution; operators should apply appropriate usage controls, audit logging, and governance aligned with their application domain. Latency objective should be selected carefully based on application.
+This work improves serving efficiency and resource allocation for batched inference systems. In deployment, operators should monitor service stability if these mechanisms are integrated. Efficiency gains can also vary based on random variance at startup or request size distribution; operators should apply appropriate usage controls, audit logging, and governance aligned with their application domain. Latency objective should be selected carefully based on application. Startup time may increase due to estimator creation, which can degrade service in some applications.
 
 ## 12. Reproducibility Notes
 Repo <https://github.com/arrmansa/Razors-Edge-batching-scheduler>

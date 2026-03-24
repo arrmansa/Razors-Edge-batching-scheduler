@@ -28,31 +28,31 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
 
     @property
     @override
-    def batch_benchmark_sizes() -> list[int]:
+    def batch_benchmark_sizes(self) -> list[int]:
         """Batch sizes for benchmarking upto max batch size"""
 
     @property
     @override
-    def min_input_size() -> int:
+    def min_input_size(self) -> int:
         """Min size of model input"""
 
     @property
     @override
-    def max_input_size() -> int:
+    def max_input_size(self) -> int:
         """Max size of model input"""
 
     @property
     @override
-    def max_input_points() -> int:    
+    def max_input_points(self) -> int:    
         """Max number of input points to consider for a given batch benchmark"""
 
     @property
     @override
-    def is_gpu() -> bool:
+    def is_gpu(self) -> bool:
         """Return whether this task runs GPU inference."""
 
     @property
-    def latency_strategy() -> Literal['RMS', 'FIFO', 'MINMAX']:
+    def latency_strategy(self) -> Literal['RMS', 'FIFO', 'MINMAX']:
         return 'RMS'
 
     @classmethod
