@@ -47,24 +47,24 @@ Most production dynamic batchers expose preferred batch sizes, and simple first-
 
 The key distinction of Razor's Edge is its two-stage decision process:
 1. **Throughput-optimal contiguous partitioning** on size-sorted requests (DP over candidate cuts).
-2. **RMS-latency-aware first-batch selection** among DP-consistent candidates.
+2. **Latency-aware first-batch selection** among DP-consistent candidates.
 
 This makes Razor's Edge closer in spirit to objective-driven scheduling than to size-only batching heuristics, while remaining practical for online serving.
 
 ### 2.4 Scope of Novelty Claim
 The contribution of this work is not a new worst-case approximation ratio in scheduling theory. Instead, it is a systems-oriented synthesis with bounded claims:
 
-1. **Algorithmic synthesis claim (implementation-level):** for variable-size batched inference queues where Section 3.2 timing assumptions are a reasonable approximation, we provide a practical sorted-queue batching model with efficient DP partitioning plus an RMS-based first-batch ordering pass.
+1. **Algorithmic synthesis claim (implementation-level):** for variable-size batched inference queues where Section 3 timing assumptions are a reasonable approximation, we provide a practical sorted-queue batching model with efficient DP partitioning plus an Latency-based ordering pass.
 2. **Engineering claim (deployment-level):** for deployments that can run startup calibration, we provide startup-efficient benchmarking/estimator construction and numerically safe scheduling implementation suitable for the tested runtime stack.
 3. **Empirical claim (evaluation-level):** on the specific synthetic and `BAAI/bge-m3`, `jinaai/jina-embeddings-v2-base-en` workloads in Section 7 (with calibrated estimator tables and stated hardware/runtime), we observe throughput/latency improvements versus the baselines defined there.
 
 What is **not** claimed:
-- no proof of global optimality for the multi-group online or request ordering ordering pass;
+- no proof of global optimality for the multi-group online or request ordering ordering pass.
 - no universal dominance over all dynamic batching policies, model families, or hardware environments.
 
 What is **validated in this paper**:
-- DP-based sorted contiguous partitioning and the RMS/FIFO/MINMAX-guided first-batch heuristic can be integrated in an online executor with bounded per-decision overhead on the tested workload class;
-- estimator calibration plus the scheduler improves measured throughput relative to the tested FIFO/fixed-cap baselines in Section 7 under the reported setup.
+- DP-based sorted contiguous partitioning and the RMS/FIFO/MINMAX-guided first-batch heuristic can be integrated in an online executor with bounded per-decision overhead on the tested workload class.
+- estimator calibration plus the scheduler improves measured throughput relative to the tested FIFO/fixed-cap baselines in Section 7 under the reported setups.
 
 The empirical sections evaluate whether this synthesis yields operational gains in realistic serving settings under these scope conditions.
 
@@ -390,7 +390,11 @@ CPU timing is possibly sensitive to garbage collection and inter-run state. The 
 
 Function: `model_test_pattern_cpu` in `src/razors_edge/optimal_benchmarking.py`.
 
-Mathematically, if the run set is \(\{t_1,\dots,t_K\}\) under different GC/sleep states, the estimator is:
+Mathematically, if the run set is 
+```math
+\(\{t_1,\dots,t_K\}\)
+```
+ under different GC/sleep states, the estimator is:
 ```math
 \hat{t}_{\mathrm{cpu}}=\min_{1\le k\le K} t_k
 ```
@@ -630,9 +634,9 @@ With no batching:
 
 `demos\synthetic\dummy latency comparison.ipynb`
 
-RMS shows lower rms, mean and p95 latency as expected.
+RMS Latency pass shows lower rms, mean and p95 latency as expected.
 
-FIFO shows higher throughput. FIFO shows lower P99 and Max latency.
+FIFO shows slightly higher throughput. FIFO shows lower P99 and Max latency.
 
 MINMAX shows the worst latencies in avg, rms and mean. MINMAX has almost equal p95, p99 and max latency.  MINMAX is slightly better than RMS at p99 and max latency. 
 
