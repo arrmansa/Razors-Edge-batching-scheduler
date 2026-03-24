@@ -763,9 +763,9 @@ On the synthetic workload, we plot throughput as a function of minimum and maxim
 
 For these experiments, this pattern is consistent with a transition between memory-dominated to compute-dominated behavior.
 
-In the real `BAAI/bge-m3` workload on gpu, we observe a qualitatively similar contour trend with higher measurement noise.
+In the real `BAAI/bge-m3` workload on gpu, we observe a qualitatively similar contour trend with higher measurement noise. Note the narrower shape on the gpu performance contours, indicating that batching generally works and improved performance especially on low sized inputs.
 
-In the real `jinaai/jina-embeddings-v2-base-en` workload on cpu we observe a qualitatively similar contour shapes.
+In the real `jinaai/jina-embeddings-v2-base-en` workload on cpu we observe a qualitatively similar contour shapes. Note the narrower shape on the cpu performance contours. This is explained by matrix multiplication being mostly compute bound on cpu, and wasted compute being heaviliy penalized.
 
 This supports applicability to the evaluated workload class (variable-size batched inference with calibrated estimators).
 
