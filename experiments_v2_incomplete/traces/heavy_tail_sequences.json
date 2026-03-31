@@ -1,0 +1,8404 @@
+{
+  "events": [
+    {
+      "timestamp_ms": 8,
+      "seq_len": 196,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 22,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 31,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 34,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 36,
+      "seq_len": 149,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 47,
+      "seq_len": 103,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 48,
+      "seq_len": 175,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 54,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 63,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 64,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 69,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 83,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 96,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 98,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 100,
+      "seq_len": 214,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 101,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 108,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 112,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 114,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 117,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 118,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 129,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 133,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 140,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 145,
+      "seq_len": 93,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 148,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 161,
+      "seq_len": 248,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 168,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 178,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 181,
+      "seq_len": 374,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 191,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 202,
+      "seq_len": 168,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 206,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 215,
+      "seq_len": 425,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 222,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 234,
+      "seq_len": 130,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 248,
+      "seq_len": 318,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 257,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 259,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 270,
+      "seq_len": 390,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 275,
+      "seq_len": 128,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 282,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 285,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 288,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 300,
+      "seq_len": 179,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 303,
+      "seq_len": 612,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 311,
+      "seq_len": 127,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 323,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 325,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 337,
+      "seq_len": 129,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 343,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 345,
+      "seq_len": 242,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 358,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 359,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 369,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 375,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 385,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 394,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 406,
+      "seq_len": 139,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 407,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 417,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 423,
+      "seq_len": 133,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 427,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 431,
+      "seq_len": 263,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 444,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 450,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 456,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 464,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 478,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 486,
+      "seq_len": 230,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 500,
+      "seq_len": 368,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 502,
+      "seq_len": 177,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 512,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 525,
+      "seq_len": 110,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 532,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 546,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 559,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 570,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 572,
+      "seq_len": 120,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 580,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 593,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 596,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 605,
+      "seq_len": 164,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 615,
+      "seq_len": 597,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 619,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 627,
+      "seq_len": 137,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 641,
+      "seq_len": 337,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 652,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 654,
+      "seq_len": 169,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 666,
+      "seq_len": 207,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 668,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 675,
+      "seq_len": 199,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 676,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 685,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 688,
+      "seq_len": 339,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 699,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 701,
+      "seq_len": 179,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 710,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 721,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 730,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 744,
+      "seq_len": 413,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 749,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 753,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 754,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 755,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 768,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 777,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 790,
+      "seq_len": 220,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 798,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 812,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 819,
+      "seq_len": 1219,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 822,
+      "seq_len": 135,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 830,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 835,
+      "seq_len": 284,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 842,
+      "seq_len": 347,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 851,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 862,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 871,
+      "seq_len": 310,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 875,
+      "seq_len": 551,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 881,
+      "seq_len": 223,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 887,
+      "seq_len": 187,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 900,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 912,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 919,
+      "seq_len": 218,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 932,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 943,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 957,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 966,
+      "seq_len": 222,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 967,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 976,
+      "seq_len": 310,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 980,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 994,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1005,
+      "seq_len": 343,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1018,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1025,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1035,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1036,
+      "seq_len": 167,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1044,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1048,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1061,
+      "seq_len": 469,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1075,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1085,
+      "seq_len": 538,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1099,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1105,
+      "seq_len": 574,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1112,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1125,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1126,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1133,
+      "seq_len": 105,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1140,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1144,
+      "seq_len": 346,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1154,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1161,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1172,
+      "seq_len": 64,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1177,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1186,
+      "seq_len": 122,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1196,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1205,
+      "seq_len": 163,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1206,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1213,
+      "seq_len": 76,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1221,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1228,
+      "seq_len": 304,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1237,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1246,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1255,
+      "seq_len": 251,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1266,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1278,
+      "seq_len": 53,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1290,
+      "seq_len": 275,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1298,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1299,
+      "seq_len": 154,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1311,
+      "seq_len": 231,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1323,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1331,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1337,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1345,
+      "seq_len": 131,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1356,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1365,
+      "seq_len": 152,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1370,
+      "seq_len": 138,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1372,
+      "seq_len": 82,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1381,
+      "seq_len": 113,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1386,
+      "seq_len": 161,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1398,
+      "seq_len": 125,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1411,
+      "seq_len": 82,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1415,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1422,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1435,
+      "seq_len": 103,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1441,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1447,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1461,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1475,
+      "seq_len": 146,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1482,
+      "seq_len": 163,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1485,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1495,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1507,
+      "seq_len": 161,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1518,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1524,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1535,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1536,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1547,
+      "seq_len": 145,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1555,
+      "seq_len": 287,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1560,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1571,
+      "seq_len": 150,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1573,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1583,
+      "seq_len": 287,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1596,
+      "seq_len": 387,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1600,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1609,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1615,
+      "seq_len": 166,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1627,
+      "seq_len": 139,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1636,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1639,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1653,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1663,
+      "seq_len": 224,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1673,
+      "seq_len": 118,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1675,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1677,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1689,
+      "seq_len": 208,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1701,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1710,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1716,
+      "seq_len": 146,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1725,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1738,
+      "seq_len": 436,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1752,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1754,
+      "seq_len": 135,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1766,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1777,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1781,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1786,
+      "seq_len": 56,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1797,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1810,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1814,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1823,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1828,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1833,
+      "seq_len": 146,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1841,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1843,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1844,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1857,
+      "seq_len": 53,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1866,
+      "seq_len": 746,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1867,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1868,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1875,
+      "seq_len": 101,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1878,
+      "seq_len": 140,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1892,
+      "seq_len": 150,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1904,
+      "seq_len": 87,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1917,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1931,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1937,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1939,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1940,
+      "seq_len": 190,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1951,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1960,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1965,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1974,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1986,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 1997,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2011,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2025,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2029,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2042,
+      "seq_len": 155,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2052,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2061,
+      "seq_len": 217,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2063,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2075,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2080,
+      "seq_len": 120,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2086,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2088,
+      "seq_len": 231,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2091,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2093,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2095,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2101,
+      "seq_len": 286,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2110,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2113,
+      "seq_len": 199,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2119,
+      "seq_len": 554,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2131,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2144,
+      "seq_len": 351,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2154,
+      "seq_len": 87,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2158,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2160,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2166,
+      "seq_len": 102,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2179,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2183,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2186,
+      "seq_len": 95,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2195,
+      "seq_len": 458,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2196,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2198,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2205,
+      "seq_len": 134,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2219,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2221,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2225,
+      "seq_len": 371,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2234,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2248,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2262,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2268,
+      "seq_len": 163,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2277,
+      "seq_len": 216,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2284,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2296,
+      "seq_len": 498,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2307,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2310,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2317,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2322,
+      "seq_len": 487,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2329,
+      "seq_len": 74,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2339,
+      "seq_len": 414,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2346,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2354,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2364,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2371,
+      "seq_len": 226,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2372,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2379,
+      "seq_len": 218,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2392,
+      "seq_len": 191,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2406,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2413,
+      "seq_len": 382,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2415,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2420,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2430,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2442,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2444,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2452,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2454,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2463,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2473,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2481,
+      "seq_len": 218,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2489,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2495,
+      "seq_len": 199,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2503,
+      "seq_len": 176,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2512,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2513,
+      "seq_len": 118,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2527,
+      "seq_len": 742,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2530,
+      "seq_len": 184,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2533,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2545,
+      "seq_len": 127,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2557,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2570,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2579,
+      "seq_len": 406,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2583,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2586,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2588,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2597,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2604,
+      "seq_len": 144,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2609,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2610,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2617,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2618,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2632,
+      "seq_len": 199,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2642,
+      "seq_len": 144,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2652,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2661,
+      "seq_len": 731,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2674,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2683,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2691,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2703,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2706,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2716,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2724,
+      "seq_len": 1177,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2725,
+      "seq_len": 105,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2738,
+      "seq_len": 224,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2739,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2745,
+      "seq_len": 662,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2758,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2760,
+      "seq_len": 137,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2767,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2779,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2787,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2793,
+      "seq_len": 257,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2794,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2806,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2807,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2816,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2821,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2822,
+      "seq_len": 242,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2834,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2836,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2844,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2849,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2856,
+      "seq_len": 208,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2870,
+      "seq_len": 210,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2877,
+      "seq_len": 150,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2883,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2896,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2900,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2908,
+      "seq_len": 764,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2912,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2913,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2918,
+      "seq_len": 125,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2930,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2941,
+      "seq_len": 134,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2947,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2951,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2958,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2965,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2974,
+      "seq_len": 123,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2984,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2985,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 2993,
+      "seq_len": 88,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3005,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3013,
+      "seq_len": 113,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3017,
+      "seq_len": 279,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3025,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3039,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3045,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3046,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3059,
+      "seq_len": 260,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3070,
+      "seq_len": 95,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3072,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3074,
+      "seq_len": 146,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3082,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3088,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3092,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3100,
+      "seq_len": 165,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3112,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3118,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3132,
+      "seq_len": 110,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3133,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3147,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3153,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3159,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3170,
+      "seq_len": 521,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3177,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3181,
+      "seq_len": 284,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3191,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3193,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3201,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3202,
+      "seq_len": 422,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3207,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3208,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3212,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3221,
+      "seq_len": 64,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3229,
+      "seq_len": 687,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3242,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3243,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3255,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3259,
+      "seq_len": 157,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3269,
+      "seq_len": 430,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3274,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3286,
+      "seq_len": 144,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3297,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3300,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3309,
+      "seq_len": 200,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3312,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3320,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3329,
+      "seq_len": 311,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3334,
+      "seq_len": 133,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3346,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3360,
+      "seq_len": 299,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3367,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3379,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3390,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3391,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3404,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3415,
+      "seq_len": 129,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3426,
+      "seq_len": 123,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3427,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3436,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3445,
+      "seq_len": 170,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3447,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3461,
+      "seq_len": 113,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3473,
+      "seq_len": 192,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3483,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3492,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3500,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3505,
+      "seq_len": 257,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3508,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3519,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3521,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3526,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3527,
+      "seq_len": 216,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3529,
+      "seq_len": 339,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3530,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3537,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3547,
+      "seq_len": 166,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3552,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3556,
+      "seq_len": 373,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3570,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3575,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3580,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3584,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3597,
+      "seq_len": 104,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3610,
+      "seq_len": 344,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3615,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3620,
+      "seq_len": 502,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3621,
+      "seq_len": 96,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3628,
+      "seq_len": 177,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3633,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3644,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3646,
+      "seq_len": 226,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3648,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3651,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3660,
+      "seq_len": 53,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3666,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3667,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3669,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3682,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3684,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3692,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3695,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3698,
+      "seq_len": 222,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3699,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3706,
+      "seq_len": 110,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3714,
+      "seq_len": 422,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3723,
+      "seq_len": 171,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3731,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3735,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3736,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3747,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3748,
+      "seq_len": 873,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3751,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3756,
+      "seq_len": 147,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3768,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3769,
+      "seq_len": 167,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3777,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3788,
+      "seq_len": 145,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3790,
+      "seq_len": 231,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3795,
+      "seq_len": 132,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3808,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3809,
+      "seq_len": 177,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3814,
+      "seq_len": 230,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3816,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3824,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3838,
+      "seq_len": 199,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3851,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3857,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3867,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3877,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3879,
+      "seq_len": 490,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3891,
+      "seq_len": 318,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3905,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3916,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3929,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3937,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3942,
+      "seq_len": 566,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3948,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3960,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3967,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3977,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3986,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 3994,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4008,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4012,
+      "seq_len": 231,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4020,
+      "seq_len": 118,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4026,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4031,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4042,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4048,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4054,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4065,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4071,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4073,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4079,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4080,
+      "seq_len": 329,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4094,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4096,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4107,
+      "seq_len": 378,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4117,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4120,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4133,
+      "seq_len": 160,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4145,
+      "seq_len": 645,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4157,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4164,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4178,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4179,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4188,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4201,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4205,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4218,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4226,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4234,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4237,
+      "seq_len": 165,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4247,
+      "seq_len": 87,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4257,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4259,
+      "seq_len": 330,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4262,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4269,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4278,
+      "seq_len": 407,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4279,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4283,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4290,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4301,
+      "seq_len": 109,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4311,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4318,
+      "seq_len": 183,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4329,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4330,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4333,
+      "seq_len": 90,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4340,
+      "seq_len": 437,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4352,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4360,
+      "seq_len": 408,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4369,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4376,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4388,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4394,
+      "seq_len": 170,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4407,
+      "seq_len": 101,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4415,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4419,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4432,
+      "seq_len": 64,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4442,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4446,
+      "seq_len": 189,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4452,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4457,
+      "seq_len": 105,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4470,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4472,
+      "seq_len": 278,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4483,
+      "seq_len": 215,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4494,
+      "seq_len": 228,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4495,
+      "seq_len": 236,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4501,
+      "seq_len": 193,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4514,
+      "seq_len": 375,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4522,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4524,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4536,
+      "seq_len": 307,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4540,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4543,
+      "seq_len": 158,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4557,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4564,
+      "seq_len": 205,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4576,
+      "seq_len": 347,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4588,
+      "seq_len": 232,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4596,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4600,
+      "seq_len": 123,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4613,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4623,
+      "seq_len": 108,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4636,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4643,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4647,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4654,
+      "seq_len": 96,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4656,
+      "seq_len": 163,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4660,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4670,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4677,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4690,
+      "seq_len": 154,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4699,
+      "seq_len": 179,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4708,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4716,
+      "seq_len": 145,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4729,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4733,
+      "seq_len": 332,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4739,
+      "seq_len": 135,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4752,
+      "seq_len": 138,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4766,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4769,
+      "seq_len": 88,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4774,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4779,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4784,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4798,
+      "seq_len": 122,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4810,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4822,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4835,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4839,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4845,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4851,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4862,
+      "seq_len": 147,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4863,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4865,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4871,
+      "seq_len": 110,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4872,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4883,
+      "seq_len": 392,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4890,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4899,
+      "seq_len": 192,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4903,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4915,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4924,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4929,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4939,
+      "seq_len": 221,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4942,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4943,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4948,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4958,
+      "seq_len": 326,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4960,
+      "seq_len": 213,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4966,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4979,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4988,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4992,
+      "seq_len": 287,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 4996,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5004,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5014,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5019,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5024,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5030,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5031,
+      "seq_len": 240,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5033,
+      "seq_len": 154,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5041,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5044,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5046,
+      "seq_len": 321,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5049,
+      "seq_len": 53,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5053,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5060,
+      "seq_len": 400,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5072,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5074,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5075,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5086,
+      "seq_len": 598,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5092,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5097,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5103,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5112,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5120,
+      "seq_len": 210,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5122,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5124,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5132,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5146,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5149,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5152,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5166,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5174,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5175,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5180,
+      "seq_len": 318,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5192,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5198,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5208,
+      "seq_len": 103,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5217,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5225,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5230,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5237,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5248,
+      "seq_len": 356,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5259,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5270,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5276,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5287,
+      "seq_len": 87,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5292,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5306,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5310,
+      "seq_len": 328,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5317,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5319,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5324,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5333,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5337,
+      "seq_len": 146,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5342,
+      "seq_len": 390,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5354,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5357,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5369,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5375,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5386,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5397,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5402,
+      "seq_len": 205,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5405,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5410,
+      "seq_len": 697,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5424,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5428,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5429,
+      "seq_len": 303,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5433,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5435,
+      "seq_len": 162,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5441,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5442,
+      "seq_len": 182,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5444,
+      "seq_len": 220,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5454,
+      "seq_len": 164,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5459,
+      "seq_len": 117,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5472,
+      "seq_len": 142,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5476,
+      "seq_len": 261,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5483,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5484,
+      "seq_len": 248,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5498,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5502,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5510,
+      "seq_len": 311,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5519,
+      "seq_len": 81,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5529,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5542,
+      "seq_len": 266,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5548,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5549,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5556,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5557,
+      "seq_len": 88,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5565,
+      "seq_len": 147,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5568,
+      "seq_len": 155,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5582,
+      "seq_len": 182,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5592,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5602,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5604,
+      "seq_len": 382,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5614,
+      "seq_len": 264,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5624,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5625,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5632,
+      "seq_len": 178,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5633,
+      "seq_len": 451,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5641,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5645,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5655,
+      "seq_len": 102,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5667,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5675,
+      "seq_len": 190,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5684,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5696,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5706,
+      "seq_len": 135,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5717,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5719,
+      "seq_len": 2324,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5725,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5739,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5744,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5758,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5772,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5774,
+      "seq_len": 139,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5787,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5795,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5804,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5805,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5806,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5815,
+      "seq_len": 258,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5826,
+      "seq_len": 220,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5834,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5841,
+      "seq_len": 113,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5842,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5850,
+      "seq_len": 1054,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5856,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5857,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5869,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5881,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5890,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5897,
+      "seq_len": 111,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5902,
+      "seq_len": 301,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5912,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5914,
+      "seq_len": 566,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5915,
+      "seq_len": 142,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5923,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5934,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5946,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5950,
+      "seq_len": 593,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5951,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5961,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5967,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5977,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5983,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5993,
+      "seq_len": 117,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 5999,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6012,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6016,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6030,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6044,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6054,
+      "seq_len": 283,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6056,
+      "seq_len": 193,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6068,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6069,
+      "seq_len": 208,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6075,
+      "seq_len": 230,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6076,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6086,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6089,
+      "seq_len": 249,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6098,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6111,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6115,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6124,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6134,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6148,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6161,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6170,
+      "seq_len": 504,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6182,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6186,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6192,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6197,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6203,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6214,
+      "seq_len": 177,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6221,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6222,
+      "seq_len": 96,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6230,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6238,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6247,
+      "seq_len": 532,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6248,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6252,
+      "seq_len": 103,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6257,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6268,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6281,
+      "seq_len": 399,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6282,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6294,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6295,
+      "seq_len": 149,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6297,
+      "seq_len": 1728,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6298,
+      "seq_len": 200,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6312,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6323,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6324,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6328,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6331,
+      "seq_len": 139,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6345,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6356,
+      "seq_len": 178,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6363,
+      "seq_len": 244,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6364,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6371,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6373,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6376,
+      "seq_len": 102,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6377,
+      "seq_len": 81,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6387,
+      "seq_len": 120,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6395,
+      "seq_len": 123,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6409,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6416,
+      "seq_len": 182,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6429,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6435,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6438,
+      "seq_len": 546,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6442,
+      "seq_len": 231,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6444,
+      "seq_len": 124,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6450,
+      "seq_len": 653,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6451,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6454,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6458,
+      "seq_len": 17,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6460,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6467,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6479,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6487,
+      "seq_len": 297,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6500,
+      "seq_len": 104,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6509,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6512,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6518,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6523,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6536,
+      "seq_len": 157,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6550,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6560,
+      "seq_len": 409,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6565,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6575,
+      "seq_len": 130,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6585,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6595,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6606,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6618,
+      "seq_len": 120,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6623,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6629,
+      "seq_len": 128,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6641,
+      "seq_len": 104,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6653,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6661,
+      "seq_len": 295,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6667,
+      "seq_len": 93,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6679,
+      "seq_len": 176,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6690,
+      "seq_len": 891,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6701,
+      "seq_len": 103,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6702,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6711,
+      "seq_len": 205,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6722,
+      "seq_len": 41,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6728,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6739,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6753,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6764,
+      "seq_len": 132,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6766,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6769,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6775,
+      "seq_len": 356,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6785,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6794,
+      "seq_len": 255,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6807,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6811,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6816,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6819,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6822,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6824,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6833,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6844,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6852,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6861,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6868,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6871,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6877,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6889,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6892,
+      "seq_len": 205,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6895,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6905,
+      "seq_len": 256,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6906,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6919,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6930,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6943,
+      "seq_len": 1136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6953,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6958,
+      "seq_len": 201,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6969,
+      "seq_len": 314,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6972,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6985,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6990,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 6996,
+      "seq_len": 398,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7001,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7008,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7017,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7031,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7039,
+      "seq_len": 56,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7042,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7046,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7056,
+      "seq_len": 376,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7070,
+      "seq_len": 366,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7077,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7083,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7091,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7104,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7109,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7114,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7127,
+      "seq_len": 125,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7139,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7150,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7163,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7165,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7169,
+      "seq_len": 173,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7177,
+      "seq_len": 175,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7181,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7183,
+      "seq_len": 287,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7184,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7192,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7199,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7202,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7216,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7222,
+      "seq_len": 145,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7231,
+      "seq_len": 139,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7234,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7240,
+      "seq_len": 298,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7242,
+      "seq_len": 284,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7250,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7252,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7259,
+      "seq_len": 637,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7271,
+      "seq_len": 229,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7284,
+      "seq_len": 150,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7287,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7290,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7303,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7309,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7313,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7326,
+      "seq_len": 267,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7329,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7333,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7334,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7337,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7346,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7360,
+      "seq_len": 133,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7372,
+      "seq_len": 909,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7382,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7385,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7387,
+      "seq_len": 309,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7390,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7399,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7407,
+      "seq_len": 225,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7419,
+      "seq_len": 121,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7428,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7429,
+      "seq_len": 184,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7440,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7446,
+      "seq_len": 110,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7449,
+      "seq_len": 147,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7461,
+      "seq_len": 35,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7469,
+      "seq_len": 470,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7474,
+      "seq_len": 17,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7476,
+      "seq_len": 64,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7481,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7490,
+      "seq_len": 147,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7495,
+      "seq_len": 101,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7497,
+      "seq_len": 82,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7502,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7516,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7522,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7535,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7544,
+      "seq_len": 90,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7552,
+      "seq_len": 127,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7560,
+      "seq_len": 142,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7570,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7575,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7588,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7589,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7598,
+      "seq_len": 30,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7605,
+      "seq_len": 245,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7613,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7618,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7632,
+      "seq_len": 401,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7635,
+      "seq_len": 141,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7644,
+      "seq_len": 896,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7645,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7646,
+      "seq_len": 99,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7647,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7660,
+      "seq_len": 134,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7671,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7672,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7679,
+      "seq_len": 53,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7691,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7701,
+      "seq_len": 395,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7702,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7705,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7716,
+      "seq_len": 81,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7723,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7730,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7731,
+      "seq_len": 169,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7735,
+      "seq_len": 73,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7746,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7760,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7765,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7778,
+      "seq_len": 308,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7781,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7783,
+      "seq_len": 290,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7785,
+      "seq_len": 127,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7792,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7803,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7814,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7815,
+      "seq_len": 105,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7822,
+      "seq_len": 568,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7830,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7842,
+      "seq_len": 64,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7846,
+      "seq_len": 311,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7849,
+      "seq_len": 408,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7861,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7863,
+      "seq_len": 60,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7874,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7882,
+      "seq_len": 210,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7896,
+      "seq_len": 227,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7909,
+      "seq_len": 461,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7919,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7930,
+      "seq_len": 369,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7938,
+      "seq_len": 241,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7951,
+      "seq_len": 101,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7962,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7968,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7970,
+      "seq_len": 117,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7975,
+      "seq_len": 418,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7977,
+      "seq_len": 108,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7990,
+      "seq_len": 171,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 7995,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8004,
+      "seq_len": 153,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8010,
+      "seq_len": 25,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8015,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8022,
+      "seq_len": 1160,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8031,
+      "seq_len": 142,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8041,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8049,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8057,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8068,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8075,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8084,
+      "seq_len": 214,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8098,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8111,
+      "seq_len": 179,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8112,
+      "seq_len": 154,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8126,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8127,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8138,
+      "seq_len": 148,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8149,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8161,
+      "seq_len": 246,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8168,
+      "seq_len": 95,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8182,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8188,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8189,
+      "seq_len": 138,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8196,
+      "seq_len": 247,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8200,
+      "seq_len": 165,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8210,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8216,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8223,
+      "seq_len": 362,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8224,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8230,
+      "seq_len": 557,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8242,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8251,
+      "seq_len": 396,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8252,
+      "seq_len": 45,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8263,
+      "seq_len": 61,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8269,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8274,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8287,
+      "seq_len": 169,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8289,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8302,
+      "seq_len": 33,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8309,
+      "seq_len": 101,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8312,
+      "seq_len": 125,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8316,
+      "seq_len": 83,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8330,
+      "seq_len": 237,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8334,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8343,
+      "seq_len": 305,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8351,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8352,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8362,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8369,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8383,
+      "seq_len": 956,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8386,
+      "seq_len": 159,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8392,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8400,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8405,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8410,
+      "seq_len": 220,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8420,
+      "seq_len": 383,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8430,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8432,
+      "seq_len": 189,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8436,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8437,
+      "seq_len": 265,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8448,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8450,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8452,
+      "seq_len": 336,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8461,
+      "seq_len": 462,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8475,
+      "seq_len": 106,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8476,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8490,
+      "seq_len": 133,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8492,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8501,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8510,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8511,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8525,
+      "seq_len": 172,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8526,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8529,
+      "seq_len": 755,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8541,
+      "seq_len": 97,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8550,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8555,
+      "seq_len": 735,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8559,
+      "seq_len": 227,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8568,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8579,
+      "seq_len": 248,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8583,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8596,
+      "seq_len": 1379,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8604,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8605,
+      "seq_len": 100,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8612,
+      "seq_len": 104,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8623,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8637,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8651,
+      "seq_len": 171,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8661,
+      "seq_len": 102,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8671,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8676,
+      "seq_len": 20,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8684,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8694,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8699,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8711,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8721,
+      "seq_len": 853,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8729,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8737,
+      "seq_len": 89,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8742,
+      "seq_len": 213,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8747,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8760,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8773,
+      "seq_len": 52,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8785,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8788,
+      "seq_len": 419,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8794,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8796,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8809,
+      "seq_len": 216,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8822,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8833,
+      "seq_len": 104,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8842,
+      "seq_len": 88,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8850,
+      "seq_len": 385,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8853,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8858,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8861,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8866,
+      "seq_len": 290,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8877,
+      "seq_len": 214,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8882,
+      "seq_len": 92,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8891,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8901,
+      "seq_len": 131,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8910,
+      "seq_len": 133,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8915,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8919,
+      "seq_len": 67,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8929,
+      "seq_len": 283,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8940,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8953,
+      "seq_len": 18,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8964,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8969,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8979,
+      "seq_len": 188,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 8993,
+      "seq_len": 333,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9000,
+      "seq_len": 107,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9009,
+      "seq_len": 70,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9012,
+      "seq_len": 128,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9014,
+      "seq_len": 173,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9015,
+      "seq_len": 23,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9018,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9025,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9035,
+      "seq_len": 468,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9045,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9051,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9058,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9066,
+      "seq_len": 189,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9070,
+      "seq_len": 96,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9074,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9081,
+      "seq_len": 123,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9093,
+      "seq_len": 222,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9094,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9097,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9099,
+      "seq_len": 102,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9107,
+      "seq_len": 118,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9116,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9123,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9136,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9146,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9152,
+      "seq_len": 43,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9163,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9171,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9177,
+      "seq_len": 130,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9186,
+      "seq_len": 38,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9199,
+      "seq_len": 76,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9202,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9209,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9218,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9225,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9237,
+      "seq_len": 21,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9242,
+      "seq_len": 175,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9252,
+      "seq_len": 71,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9255,
+      "seq_len": 300,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9262,
+      "seq_len": 47,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9263,
+      "seq_len": 19,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9268,
+      "seq_len": 267,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9269,
+      "seq_len": 95,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9277,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9290,
+      "seq_len": 219,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9291,
+      "seq_len": 298,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9300,
+      "seq_len": 85,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9313,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9323,
+      "seq_len": 80,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9334,
+      "seq_len": 111,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9341,
+      "seq_len": 55,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9347,
+      "seq_len": 168,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9351,
+      "seq_len": 95,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9356,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9365,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9369,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9371,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9384,
+      "seq_len": 407,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9391,
+      "seq_len": 69,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9402,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9407,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9416,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9429,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9442,
+      "seq_len": 441,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9456,
+      "seq_len": 40,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9468,
+      "seq_len": 27,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9471,
+      "seq_len": 57,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9481,
+      "seq_len": 135,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9491,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9503,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9506,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9508,
+      "seq_len": 112,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9514,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9527,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9537,
+      "seq_len": 91,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9545,
+      "seq_len": 94,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9557,
+      "seq_len": 50,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9558,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9570,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9580,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9591,
+      "seq_len": 232,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9605,
+      "seq_len": 127,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9612,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9624,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9630,
+      "seq_len": 59,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9636,
+      "seq_len": 48,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9647,
+      "seq_len": 34,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9654,
+      "seq_len": 203,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9656,
+      "seq_len": 747,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9663,
+      "seq_len": 286,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9673,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9683,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9684,
+      "seq_len": 392,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9697,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9711,
+      "seq_len": 243,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9722,
+      "seq_len": 114,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9734,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9739,
+      "seq_len": 201,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9745,
+      "seq_len": 31,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9756,
+      "seq_len": 1686,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9770,
+      "seq_len": 28,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9778,
+      "seq_len": 561,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9792,
+      "seq_len": 36,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9795,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9801,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9814,
+      "seq_len": 331,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9823,
+      "seq_len": 24,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9828,
+      "seq_len": 65,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9840,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9841,
+      "seq_len": 113,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9845,
+      "seq_len": 152,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9852,
+      "seq_len": 119,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9864,
+      "seq_len": 108,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9874,
+      "seq_len": 325,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9885,
+      "seq_len": 86,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9895,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9908,
+      "seq_len": 22,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9914,
+      "seq_len": 294,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9923,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9934,
+      "seq_len": 51,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9940,
+      "seq_len": 62,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9954,
+      "seq_len": 78,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9963,
+      "seq_len": 575,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9975,
+      "seq_len": 126,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9983,
+      "seq_len": 44,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9992,
+      "seq_len": 302,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 9999,
+      "seq_len": 180,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10011,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10020,
+      "seq_len": 122,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10022,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10024,
+      "seq_len": 958,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10029,
+      "seq_len": 84,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10032,
+      "seq_len": 79,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10046,
+      "seq_len": 261,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10057,
+      "seq_len": 341,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10059,
+      "seq_len": 26,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10067,
+      "seq_len": 32,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10075,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10076,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10087,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10089,
+      "seq_len": 131,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10101,
+      "seq_len": 480,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10103,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10114,
+      "seq_len": 98,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10126,
+      "seq_len": 56,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10137,
+      "seq_len": 144,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10139,
+      "seq_len": 109,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10146,
+      "seq_len": 29,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10157,
+      "seq_len": 129,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10170,
+      "seq_len": 125,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10183,
+      "seq_len": 66,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10189,
+      "seq_len": 157,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10193,
+      "seq_len": 150,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10195,
+      "seq_len": 75,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10200,
+      "seq_len": 409,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10202,
+      "seq_len": 136,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10212,
+      "seq_len": 866,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10221,
+      "seq_len": 77,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10228,
+      "seq_len": 63,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10241,
+      "seq_len": 49,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10244,
+      "seq_len": 219,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10245,
+      "seq_len": 42,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10256,
+      "seq_len": 116,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10269,
+      "seq_len": 221,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10271,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10284,
+      "seq_len": 17,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10298,
+      "seq_len": 74,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10299,
+      "seq_len": 156,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10308,
+      "seq_len": 88,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10317,
+      "seq_len": 72,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10320,
+      "seq_len": 46,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10328,
+      "seq_len": 37,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10339,
+      "seq_len": 68,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10343,
+      "seq_len": 374,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10350,
+      "seq_len": 243,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10363,
+      "seq_len": 58,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10374,
+      "seq_len": 115,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10382,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10383,
+      "seq_len": 39,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10389,
+      "seq_len": 307,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10402,
+      "seq_len": 217,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10403,
+      "seq_len": 105,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10409,
+      "seq_len": 16,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10420,
+      "seq_len": 372,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10422,
+      "seq_len": 54,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10424,
+      "seq_len": 306,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    },
+    {
+      "timestamp_ms": 10434,
+      "seq_len": 387,
+      "tenant": "tenant_b",
+      "traffic_class": "analytics"
+    }
+  ]
+}

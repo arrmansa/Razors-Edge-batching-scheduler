@@ -1,0 +1,56 @@
+version: 1
+repetitions: 10
+seeds:
+  - 104729
+  - 130363
+  - 155921
+  - 181081
+  - 206369
+  - 231709
+  - 257033
+  - 282377
+  - 307687
+  - 333017
+
+hardware:
+  - id: nvidia_turing_t4
+    class: gpu
+    vendor: nvidia
+    generation: turing
+    sku: tesla_t4
+
+  - id: nvidia_hopper_h100
+    class: gpu
+    vendor: nvidia
+    generation: hopper
+    sku: h100_sxm
+
+  - id: amd_epyc_7v13
+    class: cpu
+    vendor: amd
+    generation: milan
+    sku: epyc_7v13
+    datacenter: true
+
+models:
+  - id: emb_all_minilm_l6_v2
+    task: embeddings
+    family: sentence-transformers/all-MiniLM-L6-v2
+
+  - id: clf_distilbert_sst2
+    task: encoder_classifier
+    family: distilbert-base-uncased-finetuned-sst-2-english
+
+  - id: rerank_cross_encoder_ms_marco
+    task: reranker_cross_encoder
+    family: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+traces:
+  - id: bursty_arrivals
+    path: experiments_v2_incomplete/traces/bursty_arrivals.json
+
+  - id: heavy_tail_sequences
+    path: experiments_v2_incomplete/traces/heavy_tail_sequences.json
+
+  - id: mixed_tenant_traffic
+    path: experiments_v2_incomplete/traces/mixed_tenant_traffic.json

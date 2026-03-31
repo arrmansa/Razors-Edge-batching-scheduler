@@ -21,6 +21,8 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
     This also avoids loading libraries like numpy, scipy and other razors edge functionality just by importing this class
     """
 
+    _cache_for_batch_timing_estimators = {}
+
     @staticmethod
     @override
     def get_batch_start_end_idx_and_duration(sorted_model_input_sizes: tuple[int], batch_timing_estimators, queuing_times: tuple[int], expected_schedule_time: int) -> tuple[int, int, int]:
@@ -52,8 +54,12 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
         """Return whether this task runs GPU inference."""
 
     @property
-    def latency_strategy(self) -> Literal['RMS', 'FIFO', 'MINMAX']:
-        return 'RMS'
+    def latency_strategy(self) -> Literal['FIFO', 'MINMAX', 'GUARDED_BATCH_SIZE']:
+        return 'MINMAX'
+    
+    @property
+    def enable_cache_batch_timing_estimators(self) -> bool:
+        return True
 
     @classmethod
     @override
@@ -76,6 +82,16 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
     @override
     def load_model(self, model_pool: ThreadPoolExecutor) -> Any:
         """load and initialize model, tokenizer, buffers, etc."""
+
+    def _find_load_model_provider(self):
+        """
+        Find the nearest class in MRO that actually defines `load_model`
+        And doesn't just inherit it from RazorsEdgeComputeTask
+        """
+        for cls in type(self).__mro__:
+            if "load_model" in cls.__dict__:
+                return cls
+        raise RuntimeError("No helper implementation found")
 
     @override
     def batch_inference_times(self, multiple_model_inputs: Sequence[tuple[tuple, dict]]):
@@ -133,8 +149,13 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
 
         self.get_batch_start_end_idx_and_duration = get_batch_start_end_idx_and_duration
         self.model = self.load_model(model_pool)
-        batch_timing_data = self.get_batch_timing_data()
-        self.batch_timing_estimators = create_batch_timing_estimators(self.batch_benchmark_sizes, batch_timing_data, self.max_input_size, 0)
+        if self.enable_cache_batch_timing_estimators and self._find_load_model_provider() in RazorsEdgeComputeTask._cache_for_batch_timing_estimators:
+            batch_timing_estimators = RazorsEdgeComputeTask._cache_for_batch_timing_estimators[self._find_load_model_provider()]
+            self.batch_timing_estimators = batch_timing_estimators
+        else:
+            batch_timing_data = self.get_batch_timing_data()
+            self.batch_timing_estimators = create_batch_timing_estimators(self.batch_benchmark_sizes, batch_timing_data, self.max_input_size, 0)
+            RazorsEdgeComputeTask._cache_for_batch_timing_estimators[self._find_load_model_provider()] = self.batch_timing_estimators
         self.expected_schedule_time = time.perf_counter_ns()
 
     @override

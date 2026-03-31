@@ -14,7 +14,7 @@ class RazorsEdgeCPUBenchmarkTask(RazorsEdgeComputeTask):
     """Jina-v2 benchmarking task optimized for CPU execution."""
 
     
-    thread_benchmark_points = [1, 2, 4, 8]
+    thread_benchmark_points = [8]#[1, 2, 4, 8]
     thread_acceptable_inefficiency = 1.05
 
     @property

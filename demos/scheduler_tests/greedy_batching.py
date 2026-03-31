@@ -1,31 +1,76 @@
-"""Optimal batching algorithms for efficient model inference with dynamic programming and RMS latency optimization."""
-
 from typing import Literal
 
-import numpy as np
 from numba import njit
+import numpy as np
 
 
 @njit(fastmath=True, nogil=True, boundscheck=False)
-def _compiled_dynamic_batcher(sorted_model_input_sizes: np.ndarray, batch_timing_estimators: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Dynamic programming approach to compute minimum time needed to process all model_inputs in batches."""
+def _compiled_greedy_batcher_lookahead1(
+    sorted_model_input_sizes: np.ndarray,
+    batch_timing_estimators: np.ndarray
+) -> tuple[np.ndarray, np.ndarray]:
+    """
+    Lookahead-1 greedy batching:
+    At each step, compare:
+        - extend current batch
+        - split and start new batch
+    """
+
     n = len(sorted_model_input_sizes)
+    max_batch_size = len(batch_timing_estimators)
+
     prev_batch_size = np.zeros(n + 1, dtype=np.uint8)
-    batch_start_times = np.zeros(n + 1, dtype=np.int64) + np.iinfo(np.int64).max
+    batch_start_times = np.zeros(n + 1, dtype=np.int64)
+
     batch_start_times[0] = 0
-    for batch_start_idx in range(n):
-        for estimator_idx in range(len(batch_timing_estimators)):
-            batch_size = estimator_idx + 1
-            batch_end_idx = batch_start_idx + estimator_idx
-            next_batch_start_idx = batch_end_idx + 1
-            if batch_end_idx >= n:
-                continue
-            last_model_input_size = sorted_model_input_sizes[batch_end_idx]
-            next_batch_start_time = batch_timing_estimators[estimator_idx, last_model_input_size] + batch_start_times[batch_start_idx]
-            if next_batch_start_time < batch_start_times[next_batch_start_idx]:
-                batch_start_times[next_batch_start_idx] = next_batch_start_time
-                prev_batch_size[next_batch_start_idx] = batch_size
+
+    i = 0
+    while i < n:
+        j = i
+        current_max = sorted_model_input_sizes[i]
+
+        # grow batch greedily
+        while j + 1 < n:
+            next_size = sorted_model_input_sizes[j + 1]
+            next_max = next_size  # sorted, so it's always increasing
+
+            batch_size = j - i + 1
+            if batch_size >= max_batch_size:
+                break
+
+            # ---- cost if we extend ----
+            # estimator index = batch_size (since +1)
+            c_extend = batch_timing_estimators[batch_size, next_max]
+
+            # ---- cost if we split ----
+            # current batch cost
+            c_current = batch_timing_estimators[batch_size - 1, current_max]
+
+            # next item alone
+            c_single = batch_timing_estimators[0, next_max]
+
+            c_split = c_current + c_single
+
+            if c_extend <= c_split:
+                j += 1
+                current_max = next_max
+            else:
+                break
+
+        # finalize batch [i, j]
+        batch_size = j - i + 1
+        end_idx = j + 1
+
+        batch_cost = batch_timing_estimators[batch_size - 1, current_max]
+
+        batch_start_times[end_idx] = batch_start_times[i] + batch_cost
+        prev_batch_size[end_idx] = batch_size
+
+        i = j + 1
+
     return batch_start_times, prev_batch_size
+
+
 
 
 @njit(fastmath=True, nogil=True, boundscheck=False)
@@ -108,7 +153,7 @@ def get_batch_start_end_idx_and_duration(
 ) -> tuple[int, int, int]:
     """Get optimal batch start and end indexes with duration using dynamic programming and latency optimization."""
     sorted_model_input_sizes = np.asarray(sorted_model_input_sizes, dtype=np.uint32)
-    batch_start_times, prev_batch_size = _compiled_dynamic_batcher(sorted_model_input_sizes, batch_timing_estimators)
+    batch_start_times, prev_batch_size = _compiled_greedy_batcher_lookahead1(sorted_model_input_sizes, batch_timing_estimators)
     queueing_times_array = np.clip(expected_schedule_time - np.asarray(queuing_times, dtype=np.int64), 0, None)
     if strategy == 'MINMAX':
         return _get_slice_indexes_and_duration_minmax(prev_batch_size, batch_start_times, queueing_times_array)
