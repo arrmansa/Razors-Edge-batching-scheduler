@@ -6,7 +6,7 @@ from collections.abc import Iterable, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, override, Literal
 from functools import partial
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
 
 
 class RazorsEdgeComputeTask(BaseBatchedComputeTask):
@@ -65,7 +65,7 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
     @override
     def model_test_pattern(cls, model_inferencer) -> int:
         """Benchmark a callable inference workload."""
-        from src.razors_edge.optimal_benchmarking import model_test_pattern_cpu, model_test_pattern_gpu
+        from razors_edge.optimal_benchmarking import model_test_pattern_cpu, model_test_pattern_gpu
         if cls.is_gpu:
             return model_test_pattern_gpu(model_inferencer)
         else:
@@ -100,7 +100,7 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
 
     def get_batch_timing_data(self):
         """Generate batch timing data for various batch sizes and model input sizes."""
-        from src.razors_edge.optimal_benchmarking import calculate_next_benchmark_points, generate_benchmark_points, get_benchmark_data_paddings, get_points_ratio
+        from razors_edge.optimal_benchmarking import calculate_next_benchmark_points, generate_benchmark_points, get_benchmark_data_paddings, get_points_ratio
 
         points_ratio = get_points_ratio(self.min_input_size, self.max_input_size, self.max_input_points)
         initial_input_size_benchmark_points = generate_benchmark_points(self.min_input_size, self.max_input_size, points_ratio)
@@ -144,8 +144,8 @@ class RazorsEdgeComputeTask(BaseBatchedComputeTask):
 
     def __init__(self, model_pool: ThreadPoolExecutor) -> None:
         """Initialize model/tokenizer state and batching metadata."""
-        from src.razors_edge.optimal_batching import get_batch_start_end_idx_and_duration
-        from src.razors_edge.optimal_benchmarking import create_batch_timing_estimators
+        from razors_edge.optimal_batching import get_batch_start_end_idx_and_duration
+        from razors_edge.optimal_benchmarking import create_batch_timing_estimators
 
         self.get_batch_start_end_idx_and_duration = get_batch_start_end_idx_and_duration
         self.model = self.load_model(model_pool)

@@ -102,7 +102,7 @@ models). The scheduler pursues two goals simultaneously:
     (FIFO) choose the batch with the oldest input
   \item
     (MINMAX) choose the batch with the highest prospective latency
-    (waiting time + processing time)
+    (waiting + processing time)
   \item
     (GUARDED\_BATCH\_SIZE) apply a MINMAX guardrail, then prefer larger
     eligible batches for throughput
@@ -1110,7 +1110,7 @@ implementation, unrecoverable failures raise \texttt{SystemExit} so the
 host application can restart cleanly.
 
 Primary class: \texttt{ComputeExecutor} in
-\path{src/executor/process\_manager.py}.
+\path{src/batching_executor/process\_manager.py}.
 
 \hypertarget{61-process-and-threading-design}{%
 \subsection{Process and Threading
@@ -1199,7 +1199,7 @@ The base plugin interface defines preprocessing, batching acceptance,
 model call, and postprocessing hooks.
 
 Base class: \texttt{BaseBatchedComputeTask} in
-\path{src/executor/base\_batched\_compute\_task.py}.
+\path{src/batching_executor/base\_batched\_compute\_task.py}.
 
 For the default base implementation, batching is a maximal prefix under
 acceptance predicate (A):
@@ -1435,101 +1435,99 @@ notebooks).
 \hypertarget{throughput-data}{%
 \paragraph{Throughput data}\label{throughput-data}}
 
-\begin{table*}[t]
-\centering
-\begin{tabular}{@{}llllllllll@{}}
-\toprule\noalign{}
-Workload & Configuration & Run 1 & Run 2 & Run 3 & Run 4 & Run 5 & Mean
-& Std Dev & Source File \\
-\midrule\noalign{}
+\begin{table}[t]
+\caption{Throughput data: Synthetic Load. Source file: \path{demos/synthetic/dummy_performance_comparison_basic.ipynb}}
+\label{throughput-synthetic}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Configuration & Run 1 & Run 2 & Run 3 & Run 4 & Run 5 & Mean & Std Dev \\
+\midrule
+Razor\textquotesingle s Edge (MINMAX) & 13.3 & 13.3 & 13.2 & 13.3 & 13.2 & 13.3 & 0.05 \\
+No batching & 11.4 & 11.3 & 11.4 & 11.4 & 11.4 & 11.4 & 0.04 \\
+\bottomrule
+\end{tabular}%
+}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}
 
-\bottomrule\noalign{}
+\begin{table}[t]
+\caption{Throughput data: BAAI/bge-m3 GPU Workload. Source file: \path{demos/real/gpu_benchmark_performance_comparison.ipynb}}
+\label{throughput-gpu}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Configuration & Run 1 & Run 2 & Run 3 & Run 4 & Run 5 & Mean & Std Dev \\
+\midrule
+Razor\textquotesingle s Edge (MINMAX) & 35.8 & 35.5 & 36.3 & 34.4 & 34.4 & 35.3 & 0.76 \\
+No batching & 27.9 & 28.1 & 27.6 & 29.0 & 28.4 & 28.2 & 0.48 \\
+\bottomrule
+\end{tabular}%
+}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}
 
-\textbf{Synthetic Load} & Razor\textquotesingle s Edge (best final
-strategy) & 13.3 & 13.3 & 13.2 & 13.3 & 13.2 & 13.3 & 0.05 &
-\path{demos/synthetic/dummy\ performance\ comparison\ basic.ipynb} \\
-& No batching & 11.4 & 11.3 & 11.4 & 11.4 & 11.4 & 11.4 & 0.04 & \\
-\textbf{BAAI/bge-m3 GPU} & Razor\textquotesingle s Edge (best final
-strategy) & 35.8 & 35.5 & 36.3 & 34.4 & 34.4 & 35.3 & 0.76 &
-\path{demos/real/gpu\ benchmark\ performance\ comparison.ipynb} \\
-& No batching & 27.9 & 28.1 & 27.6 & 29.0 & 28.4 & 28.2 & 0.48 & \\
-\textbf{BAAI/bge-m3 GPU (Limited tokens)} & Razor\textquotesingle s Edge
-(best final strategy) & 85.1 & 82.8 & 83.3 & 86.0 & 85.9 & 84.6 & 1.33 &
-\path{demos/real/gpu\ benchmark\ performance\ comparison.ipynb} \\
-& Baseline (BS=10) & 68.1 & 69.0 & 68.3 & 66.0 & 65.5 & 67.4 & 1.37 & \\
-& No batching & 42.0 & 37.9 & 45.5 & 41.1 & 40.6 & 41.4 & 2.46 & \\
-\textbf{jinaai/jina-embeddings-v2-base-en CPU} & Razor\textquotesingle s
-Edge (best final strategy) & 16.3 & 16.1 & 16.4 & 16.2 & 16.2 & 16.2 &
-0.10 & \path{demos/cpu/cpu\ performance\ comparison\ basic.ipynb} \\
-& Baseline (BS=2) & 11.0 & 10.9 & 11.0 & 11.0 & 10.9 & 11.0 & 0.05 & \\
-& No batching & 10.5 & 10.8 & 10.5 & 10.2 & 10.7 & 10.5 & 0.21 & \\
-\end{tabular}
-\end{table*}
+\begin{table}[t]
+\caption{Throughput data: BAAI/bge-m3 GPU Workload (Limited tokens). Source file: \path{demos/real/gpu_benchmark_performance_comparison.ipynb}}
+\label{throughput-gpu-limited}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Configuration & Run 1 & Run 2 & Run 3 & Run 4 & Run 5 & Mean & Std Dev \\
+\midrule
+Razor\textquotesingle s Edge (MINMAX) & 85.1 & 82.8 & 83.3 & 86.0 & 85.9 & 84.6 & 1.33 \\
+Baseline (BS=10) & 68.1 & 69.0 & 68.3 & 66.0 & 65.5 & 67.4 & 1.37 \\
+No batching & 42.0 & 37.9 & 45.5 & 41.1 & 40.6 & 41.4 & 2.46 \\
+\bottomrule
+\end{tabular}%
+}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}
 
-\hypertarget{latency-strategy-tables}{%
-\paragraph{Latency strategy tables}\label{latency-strategy-tables}}
-
-\hypertarget{synthetic-workload}{%
-\subparagraph{Synthetic workload}\label{synthetic-workload}}
-
-\begin{table*}[t]
-\centering
-\begin{tabular}{@{}llllll@{}}
-\toprule\noalign{}
-Strategy & RPS & Mean Latency & P95 Latency & P99 Latency & Max
-Latency \\
-\midrule\noalign{}
-
-\bottomrule\noalign{}
-
-FIFO & 12.710969 & 1.282433 & 2.132870 & 2.521277 & 2.626158 \\
-MINMAX & 12.702064 & 1.289926 & 2.069032 & 2.456606 & 2.616079 \\
-GUARDED\_BATCH\_SIZE & 12.766899 & 1.282302 & 2.700126 & 3.443307 &
-3.660290 \\
-\end{tabular}
-\end{table*}
-
-\hypertarget{baaibge-m3-gpu-workload-limited-tokens}{%
-\subparagraph{BAAI/bge-m3 GPU Workload (limited
-tokens)}\label{baaibge-m3-gpu-workload-limited-tokens}}
-
-\begin{table*}[t]
-\centering
-\begin{tabular}{@{}llllll@{}}
-\toprule\noalign{}
-Strategy & RPS & Mean Latency & P95 Latency & P99 Latency & Max
-Latency \\
-\midrule\noalign{}
-
-\bottomrule\noalign{}
-
-FIFO & 25.186837 & 0.616967 & 0.904827 & 0.997882 & 1.090114 \\
-MINMAX & 24.636417 & 0.630478 & 0.904499 & 1.012017 & 1.072519 \\
-GUARDED\_BATCH\_SIZE & 24.498417 & 0.628991 & 0.974383 & 1.114459 &
-1.183429 \\
-\end{tabular}
-\end{table*}
-
-\hypertarget{jinaaijina-embeddings-v2-base-en-cpu-workload}{%
-\subparagraph{jinaai/jina-embeddings-v2-base-en CPU
-workload}\label{jinaaijina-embeddings-v2-base-en-cpu-workload}}
-
-\begin{table*}[t]
-\centering
-\begin{tabular}{@{}llllll@{}}
-\toprule\noalign{}
-Strategy & RPS & Mean Latency & P95 Latency & P99 Latency & Max
-Latency \\
-\midrule\noalign{}
-
-\bottomrule\noalign{}
-
-FIFO & 29.325394 & 3.416181 & 6.473206 & 6.775366 & 6.814931 \\
-MINMAX & 28.298121 & 3.680978 & 6.969277 & 7.067753 & 7.068030 \\
-GUARDED\_BATCH\_SIZE & 30.585454 & 3.231145 & 6.223230 & 6.481141 &
-6.545033 \\
-\end{tabular}
-\end{table*}
+\begin{table}[t]
+\caption{Throughput data: jinaai/jina-embeddings-v2-base-en CPU Workload. Source file: \path{demos/cpu/cpu_performance_comparison_basic.ipynb}}
+\label{throughput-cpu}
+\vskip 0.15in
+\begin{center}
+\begin{small}
+\begin{sc}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Configuration & Run 1 & Run 2 & Run 3 & Run 4 & Run 5 & Mean & Std Dev \\
+\midrule
+Razor\textquotesingle s Edge (MINMAX) & 16.3 & 16.1 & 16.4 & 16.2 & 16.2 & 16.2 & 0.10 \\
+Baseline (BS=2) & 11.0 & 10.9 & 11.0 & 11.0 & 10.9 & 11.0 & 0.05 \\
+No batching & 10.5 & 10.8 & 10.5 & 10.2 & 10.7 & 10.5 & 0.21 \\
+\bottomrule
+\end{tabular}%
+}
+\end{sc}
+\end{small}
+\end{center}
+\vskip -0.1in
+\end{table}
 
 \hypertarget{721-estimator-array-replay-validation}{%
 \subsection{Estimator-Array Replay Validation}\label{721-estimator-array-replay-validation}}
@@ -1542,7 +1540,7 @@ The estimator arrays were generated using:
 \begin{itemize}
 \tightlist
 \item
-  \path{demos/scheduler\_tests/save\_estimators\_for\_simulation.ipynb}
+  \path{demos/scheduler_tests/save_estimators_for_simulation.ipynb}
 \end{itemize}
 
 Replay estimator files:
@@ -1568,29 +1566,31 @@ Method:
   Baseline is FIFO arrival-order fixed-cap batching, sweeping all
   supported \texttt{n} values and selecting best mean-RPS baseline.
 \item
-  Razor\textquotesingle s Edge replay compares final strategies
+  Best Razor\textquotesingle s Edge replay compares final strategies
   (\texttt{FIFO}, \texttt{MINMAX}, \texttt{BATCH\_SIZE}) on sorted+DP
   candidate chains.
 \end{itemize}
 
-\begin{table*}[t]
+\begin{table}[t]
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{@{}lrlrrr@{}}
 \toprule\noalign{}
-Workload & Best baseline RPS & Best Razor\textquotesingle s Edge
-strategy & Best Razor\textquotesingle s Edge RPS & Replay uplift (\%) &
-Paper claim uplift (\%) \\
+Workload & baseline RPS & Batch selection & Razor\textquotesingle s Edge
+RPS & Replay uplift (\%) &
+Hardware uplift (\%) \\
 \midrule\noalign{}
 
 \bottomrule\noalign{}
 
 Synthetic & 11.348 & \texttt{BATCH\_SIZE} & 13.095 & 15.39 & 17.00 \\
-\texttt{BAAI/bge-m3} (GPU estimator replay) & 27.887 & \texttt{FIFO} &
+\texttt{BAAI/bge-m3} (GPU) & 27.887 & \texttt{FIFO} &
 37.490 & 34.44 & 26.00 \\
-\texttt{jinaai/jina-embeddings-v2-base-en} (CPU estimator replay) &
+\texttt{jina-embeddings} &
 3.488 & \texttt{BATCH\_SIZE} & 4.373 & 25.38 & 47.00 \\
-\end{tabular}
-\end{table*}
+\end{tabular}%
+}
+\end{table}
 
 These replay values are reported raw from estimator-array simulation and
 are intended as a consistency/sensitivity check alongside the end-to-end
@@ -1619,23 +1619,24 @@ variants:
   \textbf{F}: sort + greedy batch-construction + MINMAX objective.
 \end{itemize}
 
-\begin{table*}[t]
+\begin{table}[t]
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{@{}lrrrrrrr@{}}
 \toprule\noalign{}
-Workload & Fixed \texttt{n} used for A/B & A mean RPS & B mean RPS & C
+Workload &\texttt{n} used for A/B & A mean RPS & B mean RPS & C
 mean RPS & D mean RPS & E mean RPS & F mean RPS \\
 \midrule\noalign{}
 
 \bottomrule\noalign{}
-
 Synthetic & 1 & 11.348 & 11.348 & 13.054 & 13.060 & 13.095 & 12.952 \\
 \texttt{BAAI/bge-m3} replay & 3 & 27.887 & 27.924 & 37.490 & 37.173 &
 36.601 & 31.368 \\
-\texttt{jinaai/jina-embeddings-v2-base-en} replay & 1 & 3.488 & 3.488 &
+\texttt{jina-embeddings} replay & 1 & 3.488 & 3.488 &
 4.370 & 4.370 & 4.373 & 4.121 \\
-\end{tabular}
-\end{table*}
+\end{tabular}%
+}
+\end{table}
 
 Incremental mean-RPS deltas:
 
@@ -1990,7 +1991,7 @@ workload}\label{jinaaijina-embeddings-v2-base-en-cpu-workload-1}}
 (\texttt{jinaai/jina-embeddings-v2-base-en} CPU workload).
 
 \textbf{Notebook source:}
-\path{demos/cpu/cpu\ performance\ comparison.ipynb}.
+\path{demos/cpu/cpu_performance_comparison.ipynb}.
 
 \includegraphics[width=\linewidth]{images_latex/BaseBatchedCPUBenchmarkTaskB2_Throughput_vs_Parallelism.png}
 
@@ -2129,7 +2130,7 @@ and hardware.
 (real-model GPU performance contours).
 
 \textbf{Notebook source:}
-\path{demos/real/razors\ edge\ gpu\ benchmark\ graphs.ipynb}.
+\path{demos/real/razors_edge_gpu_benchmark_graphs.ipynb}.
 
 \includegraphics[width=\linewidth]{images_latex/Improvement_by_Allowing_Different_Batch_Sizes_for_RazorsEdgeGPUBenchmarkTask.png}
 
@@ -2285,10 +2286,12 @@ which can degrade service in some applications.
 Repository:
 \url{https://github.com/arrmansa/Razors-Edge-batching-scheduler}. To
 reproduce results (throughput, strategy comparisons, and historical RMS
-transitivity checks) and figures, install dependencies from
-\texttt{requirements.txt}, open each notebook in \path{demos/}, and
-execute \textbf{Run All} from the first cell in a clean kernel.
-Generated plots will be saved in \texttt{images/}.
+transitivity checks) and figures, install the released package with
+\texttt{pip\ install\ razors-edge-batching-scheduler} (or install
+dependencies from \texttt{requirements.txt} for full local development),
+open each notebook in \path{demos/}, and execute \textbf{Run All} from
+the first cell in a clean kernel. Generated plots will be saved in
+\texttt{images/}.
 
 Seeds are set in notebooks where appropriate for deterministic or
 near-deterministic sections of the experiments.
@@ -2343,9 +2346,9 @@ function names in:
 \item
   \path{src/razors_edge/razors_edge_compute_task.py}
 \item
-  \path{src/executor/base_batched_compute_task.py}
+  \path{src/batching_executor/base_batched_compute_task.py}
 \item
-  \path{src/executor/process_manager.py}
+  \path{src/batching_executor/process_manager.py}
 \end{itemize}
 
 \hypertarget{13-references}{%

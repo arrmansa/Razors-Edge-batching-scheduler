@@ -5,7 +5,7 @@ from typing import Any
 
 from torch import device
 
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
 
 
 class BaseBatchedGPUBenchmarkTask(BaseBatchedComputeTask):

@@ -1,7 +1,7 @@
 import time
 import unittest
 from concurrent.futures import ThreadPoolExecutor
-from src.razors_edge.razors_edge_compute_task import RazorsEdgeComputeTask
+from razors_edge.razors_edge_compute_task import RazorsEdgeComputeTask
 
 
 class DummyRazorsEdgeTask(RazorsEdgeComputeTask):

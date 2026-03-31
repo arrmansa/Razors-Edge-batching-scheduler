@@ -1,6 +1,6 @@
 import unittest
 from concurrent.futures import ThreadPoolExecutor
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
 
 
 class SampleTask(BaseBatchedComputeTask):

@@ -1,5 +1,5 @@
 import unittest
-from src.executor.process_manager import ComputeExecutor
+from batching_executor.process_manager import ComputeExecutor
 
 
 class TestComputeExecutorInternals(unittest.TestCase):

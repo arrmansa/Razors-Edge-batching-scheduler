@@ -484,7 +484,7 @@ using spline interpolation for measured batch sizes and linear interpolation acr
 ## 6. Systems Architecture
 All ML workloads run in a single isolated process. Compute tasks are initialized inside that process. Model loading and optional heavyweight imports occur there, isolating runtime state from the caller process. Inputs are sent through a one-way pipe, and results are received on a separate pipe by a dedicated result-setting thread that resolves pending futures. When multiple task queues compete, the queue with the earliest pending request key is selected first. Backpressure and concurrency are controlled by thread pools and semaphores. In the current implementation, unrecoverable failures raise `SystemExit` so the host application can restart cleanly.
 
-Primary class: `ComputeExecutor` in `src/executor/process_manager.py`.
+Primary class: `ComputeExecutor` in `src/batching_executor/process_manager.py`.
 
 
 ### 6.1 Process and Threading Design
@@ -523,7 +523,7 @@ with one emitted result per original request id.
 ### 6.2 Compute Task Contract
 The base plugin interface defines preprocessing, batching acceptance, model call, and postprocessing hooks.
 
-Base class: `BaseBatchedComputeTask` in `src/executor/base_batched_compute_task.py`.
+Base class: `BaseBatchedComputeTask` in `src/batching_executor/base_batched_compute_task.py`.
 
 For the default base implementation, batching is a maximal prefix under acceptance predicate \(A\):
 ```math
@@ -1129,7 +1129,7 @@ This work improves serving efficiency and resource allocation for batched infere
 
 ## 12. Reproducibility Notes
 Repository: <https://github.com/arrmansa/Razors-Edge-batching-scheduler>.
-To reproduce results (throughput, strategy comparisons, and historical RMS transitivity checks) and figures, install dependencies from `requirements.txt`, open each notebook in `demos/`, and execute **Run All** from the first cell in a clean kernel. Generated plots will be saved in `images/`.
+To reproduce results (throughput, strategy comparisons, and historical RMS transitivity checks) and figures, install the released package with `pip install razors-edge-batching-scheduler` (or install dependencies from `requirements.txt` for full local development), open each notebook in `demos/`, and execute **Run All** from the first cell in a clean kernel. Generated plots will be saved in `images/`.
 
 Seeds are set in notebooks where appropriate for deterministic or near-deterministic sections of the experiments.
 
@@ -1151,8 +1151,8 @@ The paper text describes implemented behavior and references concrete function n
 - `src/razors_edge/optimal_batching.py`
 - `src/razors_edge/optimal_benchmarking.py`
 - `src/razors_edge/razors_edge_compute_task.py`
-- `src/executor/base_batched_compute_task.py`
-- `src/executor/process_manager.py`
+- `src/batching_executor/base_batched_compute_task.py`
+- `src/batching_executor/process_manager.py`
 
 
 ## 13. References

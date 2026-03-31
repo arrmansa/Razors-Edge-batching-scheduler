@@ -7,7 +7,7 @@ from typing import Any
 import logging
 
 import numpy as np
-from src.razors_edge.razors_edge_compute_task import RazorsEdgeComputeTask
+from razors_edge.razors_edge_compute_task import RazorsEdgeComputeTask
 
 
 class RazorsEdgeCPUBenchmarkTask(RazorsEdgeComputeTask):

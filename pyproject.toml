@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "razors-edge-batching-scheduler"
+version = "0.1.0"
+authors = [
+  { name="Arrman Anicket Saha", email="arrmansa99@gmail.com" },
+]
+description = "A DP-based dynamic batching scheduler for inference workloads"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy",
+  "numba",
+  "scipy",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/arrmansa/Razors-Edge-batching-scheduler"
+"Bug Tracker" = "https://github.com/arrmansa/Razors-Edge-batching-scheduler/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

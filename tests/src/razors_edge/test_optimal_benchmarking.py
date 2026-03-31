@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from src.razors_edge.optimal_benchmarking import (
+from razors_edge.optimal_benchmarking import (
     MINIMUM_SPLINE_POINTS,
     create_batch_timing_estimators,
     generate_benchmark_points,

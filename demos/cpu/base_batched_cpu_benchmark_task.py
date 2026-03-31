@@ -3,7 +3,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any
 
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
 
 
 class BaseBatchedCPUBenchmarkTask(BaseBatchedComputeTask):

@@ -5,8 +5,8 @@ import time
 import unittest
 from concurrent.futures import ThreadPoolExecutor
 
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
-from src.executor.process_manager import ComputeExecutor
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.process_manager import ComputeExecutor
 
 
 class BatchingDetectionTask(BaseBatchedComputeTask):

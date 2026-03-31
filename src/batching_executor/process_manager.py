@@ -12,7 +12,7 @@ from time import perf_counter_ns, sleep
 from typing import Any, Iterable
 import sys
 
-from src.executor.base_batched_compute_task import BaseBatchedComputeTask
+from batching_executor.base_batched_compute_task import BaseBatchedComputeTask
 
 
 class ComputeExecutor:

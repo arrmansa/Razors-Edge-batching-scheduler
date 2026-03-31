@@ -1,3 +1,22 @@
+Metadata-Version: 2.4
+Name: razors-edge-batching-scheduler
+Version: 0.1.0
+Summary: A DP-based dynamic batching scheduler for inference workloads
+Author-email: Arrman Anicket Saha <arrmansa99@gmail.com>
+Project-URL: Homepage, https://github.com/arrmansa/Razors-Edge-batching-scheduler
+Project-URL: Bug Tracker, https://github.com/arrmansa/Razors-Edge-batching-scheduler/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: scipy
+Dynamic: license-file
+
 # Razors-Edge-batching-scheduler
 A scheduler to maximize throughput and fulfill latency objectives for ML requests.
 
